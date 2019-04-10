@@ -45,11 +45,11 @@ header nav {
     margin-top: 20px;
 }
 
-header #websiteName {
+header #headermsg {
     float: left;
 }
 
-header #websiteName h1 {
+header #headermsg h1 {
     margin-top: 5px;
 }
 
