@@ -95,6 +95,7 @@ main a:hover {
 	color: #dfe2e8;
 	text-align:center;
 	border-bottom: #6e5494 7.5px Solid;
+	padding-bottom: 2vh;
 }
 
 #main_home h1 {
@@ -104,19 +105,24 @@ main a:hover {
 
 /* MAIN RESUME */
 #main_skills {
+	margin:auto;
     background-color: #6e5494;
 	color: #ffffff;
 	padding-bottom: 50px;
-	padding-top: 1px;
+	padding-top: 1vh;
 	text-align:center;
 }
 
+#main_skills p {
+	width: 60%;
+	margin: auto;
+}
 #main_resume {
 	background-color: #303030;
 	color: #dfe2e8;
 	text-align:center;
-	padding-top: 7vh;
-	padding-bottom: 10vh;
+	padding-top: 2vh;
+	padding-bottom: 7vh;
 	border-bottom: #6e5494 7.5px Solid;
 }
 #main_resume h1 {
