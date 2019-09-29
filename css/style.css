@@ -120,7 +120,7 @@ main a:hover {
 }
 
 #gameControl {
-	padding-top: 3%;
+	padding-top: 5%;
 }
 
 #gameControl > *{
@@ -129,10 +129,10 @@ main a:hover {
 }
 
 #gameControl div { 
-	font-size: 1.2vw;
+	font-size: 1vw;
 	color: #ffffff;
 	opacity: 0.8;
-	margin-top: 3%;
+	margin-top: 2%;
 	text-align: center;
 }
 #gameControl img {

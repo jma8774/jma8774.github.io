@@ -1,0 +1,18 @@
+function Person(first, last, age, gender, interests) {
+  this.name = {
+     first : first,
+     last : last
+  };
+  this.age = age;
+  this.gender = gender;
+  this.interests = interests;
+  this.bio = function() {
+    alert("TEST: " + this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+  };
+  this.greeting = function() {
+    alert('Hi! I\'m ' + this.name.first + '.');
+  };
+}
+
+const jeemong = new Person("Jia Ming", "Ma", 21, "Male", ["to game","yeet"]);
+jeemong.bio();
