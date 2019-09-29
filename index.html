@@ -13,6 +13,7 @@
   <meta name="author" content="Jia Ming Ma">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="./css/style.css">
+
   <title> Jia Ming's GitHub Page </title>
   <style>
     .parallax1 {
@@ -53,6 +54,15 @@
       padding-top: 50vh;
 
     }
+    .parallax5 {
+      background-image: url("img/para5-logos.jpg");
+      min-height: 35vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 25vh;
+    }
   </style>
 </head>
 
@@ -74,12 +84,12 @@
     <div class="container">
       <div id="headermsg">
         <a class="fade-scroll" href="https://github.com/jma8774"> <img src="img/octocat.png"> </a>
-        <div class="fade-scroll"> <span class="highlight">Jia Ming's</span> GitHub Page </div>
+        <div class="fade-scroll"> <span class="highlight">Jia Ming's </span> GitHub Page </div>
       </div>
     </div>
   </header>
 
-  <div class="parallax2"></div>
+  <div class="parallax2 fade-in"></div>
 
   <!-- Main -->
   <main id="main_home">
@@ -91,6 +101,9 @@
 
         Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again
         keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her. </p>
+      </br>
+      <p class="reveal-right"> Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
+      </p>
     </div>
   </main>
 
@@ -99,11 +112,11 @@
   <main id="main_skills">
     <div>
     <h1 class="reveal-title"> My Skills </h1>
-    <p class="reveal-right">Sex reached suppose our whether. Oh really by an manner sister so. One sportsman tolerably him extensive put she immediate. He abroad of cannot looked in. Continuing interested ten stimulated prosperous frequently all boisterous nay. Of oh
-      really he extent horses wicket.
-
-      Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps
-      at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her. </p>
+    <div class="fade-in"> <img src="./img/java.png"> <img src="./img/android.png"> <img src="./img/cpp.png"> <img src="./img/github.png"> <img src="./img/python.png"> <img src="./img/mysql.png"> <img src="./img/javascript.png"> <img src="./img/html.png"> <img src="./img/css.png"> </div>
+    <p class="reveal-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</br>
+    <br/>
+    <p class="reveal-right"> Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
+    </p>
     </div>
   </main>
 
@@ -115,8 +128,8 @@
   </div>
   </main>
 
-  <div id="game-begin" class="parallax4">
-    <span id="title2048" class="reveal-title"> 2048 </span>
+  <div id="game-begin" class="parallax4 reveal-captions">
+    <span id="title2048"> 2048 </span>
   </div>
 
   <main id="main_2048">
@@ -140,6 +153,23 @@
     <script src="src/2048.js"></script>
   </div>
 
+  <div id="contact-begin" class="parallax5 reveal-captions">
+    <span id="titlelogos"> Contacts </span>
+  </div>
+
+  <main id="main-contact">
+    <p class="reveal-right">
+      Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
+    </p>
+    <div class="fade-in">
+      <a href="https://github.com/jma8774"> <img src="./img/github.png"> </a>
+      <img src="./img/discord.png" onclick="copy('jeemong#2525', 'discord')"> <span class="popuptext" id='discord' style="margin-left: -140px;"> Copied to clipboard! </span>
+      <img src="./img/gmail.png" onclick="copy('jma8774@bths.edu', 'gmail')"> <span class="popuptext" id='gmail' style="margin-left: -145px;"> Copied to clipboard! </span>
+      <img src="./img/outlook.png" onclick="copy('jma007@citymail.cuny.edu', 'outlook')"> <span class="popuptext" id='outlook' style="margin-left: -140px;"> Copied to clipboard! </span>
+      <a href="https://www.youtube.com/channel/UCxPrRXdkje9bYD8DsINJIFQ"> <img src="./img/youtube.png"> </a>
+    </div>
+  </main>
+
 
   <!-- Footer -->
   <footer>
@@ -149,8 +179,10 @@
 
 </body>
 <script>
-  ScrollReveal().reveal('.reveal-title', {duration: 1500, origin: 'left', distance: "300px", delay: "200", reset: "true", rotate: {x: 50, z: 50}});
-  ScrollReveal().reveal('.reveal-right', {duration: 1500, origin: 'right', distance: "400px", delay: "400", reset: "true"});
-  ScrollReveal().reveal('.reveal', {duration: 1500, origin: 'bottom', distance: "400px", delay: "200", reset: "true", scale: 0.3});
+  ScrollReveal().reveal('.reveal-title', {duration: 1500, origin: 'left', distance: "300px", delay: "0", reset: "true", rotate: {x: 50, z: 50}});
+  ScrollReveal().reveal('.reveal-captions', {duration: 1500, origin: 'left', distance: "300px", delay: "0", reset: "true", rotate: {x: -100, y: -100, z: -100}});
+  ScrollReveal().reveal('.reveal-right', {duration: 1500, origin: 'right', distance: "400px", delay: "200", reset: "true"});
+  ScrollReveal().reveal('.reveal', {duration: 1500, origin: 'bottom', distance: "400px", delay: "0", reset: "true", scale: 0.3});
+  ScrollReveal().reveal('.fade-in', {duration: 1000, origin: 'bottom', delay: "0", reset: "true", scale: 0.4});
 </script>
 </html>
