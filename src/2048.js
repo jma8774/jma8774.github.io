@@ -14,5 +14,5 @@ function Person(first, last, age, gender, interests) {
   };
 }
 
-const jeemong = new Person("Jia Ming", "Ma", 21, "Male", ["to game","yeet"]);
-jeemong.bio();
+//const jeemong = new Person("Jia Ming", "Ma", 21, "Male", ["to game","yeet"]);
+//jeemong.bio();
