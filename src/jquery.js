@@ -5,7 +5,7 @@ $(document).ready(function() {
   alert('again');
 
   if (screen.width <= 699) {
-    alert("on mobile")
+    alert("on mobile");
   }
 });
 
