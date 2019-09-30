@@ -2,12 +2,10 @@ $(document).ready(function() {
   $('#discord').fadeOut();
   $('#gmail').fadeOut();
   $('#outlook').fadeOut();
-  alert('sup');
+  alert('again');
 
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    alert("mobile");
-  } else {
-    alert("non-mobile")
+  if (screen.width <= 699) {
+    alert("on mobile")
   }
 });
 
