@@ -38,11 +38,6 @@ body{
     text-transform: uppercase;
 }
 
-.navbar a:hover {
-    color: #9e81c5;
-    font-weight: bold;
-}
-
 .navbar img {
 	margin-left: 5vh;
 	float: left;
