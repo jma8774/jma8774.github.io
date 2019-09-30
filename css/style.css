@@ -164,6 +164,20 @@ main a:hover {
 	height: 15vh;
 }
 
+/* MAIN PROJECTS */
+#main-projects {
+	background-color: #212121;
+	padding: 1vh;
+	border-bottom: #6e5494 7.5px Solid;
+	color: #ffffff;
+	text-align: center;
+}
+
+#main-project h1 {
+	font-weight: bold;
+	font-size: 50px;
+}
+
 /* MAIN 2048 */
 #title2048 {
 	background-color: #212121;

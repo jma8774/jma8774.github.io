@@ -45,17 +45,26 @@
     }
 
     .parallax4 {
-      background-image: url("img/para4-2048.jpg");
+      background-image: url("img/para4-android.png");
+      min-height: 35vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .parallax5 {
+      background-image: url("img/para5-2048.jpg");
       min-height: 50vh;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       padding-top: 50vh;
-
     }
-    .parallax5 {
-      background-image: url("img/para5-logos.jpg");
+
+    .parallax6 {
+      background-image: url("img/para6-logos.jpg");
       min-height: 35vh;
       background-attachment: fixed;
       background-position: center;
@@ -69,10 +78,11 @@
 <body>
 
   <div class="navbar">
-    <a href="https://github.com/jma8774"> <img src="img/caticon.jpg" alt="Avatar"> </a>
+    <a href="https://github.com/jma8774" target="_blank"> <img src="img/caticon.jpg" alt="Avatar"> </a>
     <a href="#home-begin">Home</a>
     <a href="#intro-begin">Introduction</a>
     <a href="#resume-begin">Resume</a>
+    <a href="#projects-begin">Projects</a>
     <a href="#game-begin">2048</a>
     <a href="#contact-begin">Contact</a>
   </div>
@@ -83,7 +93,7 @@
   <header>
     <div class="container">
       <div id="headermsg">
-        <a class="fade-scroll" href="https://github.com/jma8774"> <img src="img/octocat.png"> </a>
+        <a class="fade-scroll" href="https://github.com/jma8774" target="_blank"> <img src="img/octocat.png"> </a>
         <div class="fade-scroll"> <span class="highlight">Jia Ming's </span> GitHub Page </div>
       </div>
     </div>
@@ -128,7 +138,18 @@
   </div>
   </main>
 
-  <div id="game-begin" class="parallax4 reveal-captions">
+  <div id="projects-begin" class="parallax4 reveal-captions"> </div>
+
+  <main id="main-projects">
+    <div>
+    <h1 class="reveal-right"> My Personal Projects <a href="https://github.com/jma8774/Fruit-Cutter" target="_blank"> <img src="./img/android.png" style="margin-left: 1.5%"> </a> </h1>
+    <p class="reveal-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</br>
+    <br/>
+    <p class="reveal-right"> Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...</p>
+    </div>
+  </main>
+
+  <div id="game-begin" class="parallax5 reveal-captions">
     <span id="title2048"> 2048 </span>
   </div>
 
@@ -153,7 +174,7 @@
     <script src="src/2048.js"></script>
   </div>
 
-  <div id="contact-begin" class="parallax5 reveal-captions">
+  <div id="contact-begin" class="parallax6 reveal-captions">
     <span id="titlelogos"> Contacts </span>
   </div>
 
@@ -162,11 +183,11 @@
       Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
     </p>
     <div class="fade-in">
-      <a href="https://github.com/jma8774"> <img src="./img/github.png"> </a>
+      <a href="https://github.com/jma8774" target="_blank"> <img src="./img/github.png"> </a>
       <img src="./img/discord.png" onclick="copy('jeemong#2525', 'discord')"> <span class="popuptext" id='discord' style="margin-left: -140px;"> Copied to clipboard! </span>
       <img src="./img/gmail.png" onclick="copy('jma8774@bths.edu', 'gmail')"> <span class="popuptext" id='gmail' style="margin-left: -145px;"> Copied to clipboard! </span>
       <img src="./img/outlook.png" onclick="copy('jma007@citymail.cuny.edu', 'outlook')"> <span class="popuptext" id='outlook' style="margin-left: -140px;"> Copied to clipboard! </span>
-      <a href="https://www.youtube.com/channel/UCxPrRXdkje9bYD8DsINJIFQ"> <img src="./img/youtube.png"> </a>
+      <a href="https://www.youtube.com/channel/UCxPrRXdkje9bYD8DsINJIFQ" target="_blank"> <img src="./img/youtube.png"> </a>
     </div>
   </main>
 

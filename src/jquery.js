@@ -1,8 +1,10 @@
 $(document).ready(function() {
+  $('#github').fadeOut();
   $('#discord').fadeOut();
   $('#gmail').fadeOut();
   $('#outlook').fadeOut();
-  
+  $('#youtube').fadeOut();
+
   if (screen.width <= 699) {
     alert("It seems like you're on a mobile phone :)\nPlease use a web browser like Chrome instead, thanks!");
   }
