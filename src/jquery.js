@@ -25,6 +25,7 @@ $(document).ready(function() {
     function() {
       $(this).css('color', '#ffffff');
       $(this).css('font-weight', 'none');
+      highlightNav();
     }
   );
 
