@@ -2,10 +2,9 @@ $(document).ready(function() {
   $('#discord').fadeOut();
   $('#gmail').fadeOut();
   $('#outlook').fadeOut();
-  alert('again');
-
+  
   if (screen.width <= 699) {
-    alert("on mobile");
+    alert("It seems like you're on a mobile phone :)\nPlease use a web browser like Chrome instead, thanks!");
   }
 });
 
