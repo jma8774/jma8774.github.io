@@ -24,7 +24,7 @@ $(document).ready(function() {
     },
     function() {
       $(this).css('color', '#ffffff');
-      $(this).css('font-weight', 'none');
+      $(this).css('font-weight', 'normal');
       highlightNav();
     }
   );
@@ -34,6 +34,7 @@ $(document).ready(function() {
 function highlightNav() {
   var scrollMax = $(document).height() - $(window).height();
   $('.nava').css('color', '#ffffff');
+  $('.nava').css('font-weight', 'normal');
   if ($(window).scrollTop() < scrollMax * 0.1) {
     $('#a-home').css('color', '#8A2BE2');
     $('#a-home').css('font-weight', 'bold');
