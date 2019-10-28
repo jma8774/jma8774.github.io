@@ -17,7 +17,7 @@ canvas {
 	font: 16px/1.5 ClearSans, sans-serif;
 }
 .container{
-    width: 80%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -66,7 +66,7 @@ header {
 }
 
 header #headermsg {
-    font-size: 3vw;
+    font-size: 3em;
 }
 
 #headermsg > div {
@@ -79,14 +79,14 @@ header #headermsg .highlight {
 }
 
 header img {
-    margin-left: 20vw;
+    margin-left: 30vw;
     width: auto;
-    max-width: 10vw;
+    max-width: 4em;
 }
 
 /* MAIN HOME */
-
 #main_home {
+	overflow: hidden;
 	background: rgb(32,31,31);
 	background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 	color: #dfe2e8;
@@ -101,12 +101,14 @@ header img {
 	color: #6e5494;
 }
 
-#main_home img {
-	margin-top: 3vh;
+#main_home p {
+	width: 80%;
+	margin: auto;
 }
 
 /* MAIN RESUME */
 #main_skills {
+	border-top: #4f4f4f 7.5px Solid;
 	margin:auto;
 	background: rgb(110,84,148);
 	background: linear-gradient(129deg, rgba(110,84,148,1) 0%, rgba(167,139,208,1) 100%);
@@ -134,11 +136,11 @@ header img {
 
 #main_resume {
 	background: rgb(32,31,31);
-background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
+	background: linear-gradient(58deg, rgba(32,31,31,1) 0%, rgba(79,79,79,1) 100%);
 	color: #dfe2e8;
 	text-align:center;
-	padding-top: 2vh;
-	padding-bottom: 7vh;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
 	border-bottom: #6e5494 7.5px Solid;
 }
 #main_resume h1 {
@@ -149,15 +151,26 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 #main_resume a {
 	text-decoration: none;
 	color: #ffffff;
-	background-color: #6e5494;
 	padding-top: 15vh;
-	border-bottom: #ffffff 3px Solid;
-	border-top: #ffffff 3px Solid;
 }
 
 #main_resume a div {
-	font-size: 30px;
-	margin-bottom: 3vh;
+	font-size: 1.5vw;
+	margin-bottom: 1vh;
+}
+
+#resume_box {
+		background: #000000;
+		display: inline-block;
+		background: rgb(110,84,148);
+		background: linear-gradient(129deg, rgba(110,84,148,1) 0%, rgba(167,139,208,1) 100%);
+		border-radius: 10px;
+		margin: auto;
+}
+
+#resume_box:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
 }
 
 #main_resume a img {
@@ -167,7 +180,7 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 /* MAIN PROJECTS */
 #main-projects {
 	background: rgb(32,31,31);
-background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
+	background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 	padding: 1vh;
 	border-bottom: #6e5494 7.5px Solid;
 	color: #ffffff;
@@ -180,10 +193,28 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 }
 
 #googleplay {
-	width: 15vw;
+	width: 12.5em;
 	height: auto;
+	margin-top: .25em;
+	margin-left: .25em;
+	margin-right: .25em;
+	margin-bottom: -.16em;
 }
 
+#googleplay_box {
+	background: rgb(110,84,148);
+	background: linear-gradient(129deg, rgba(110,84,148,1) 0%, rgba(167,139,208,1) 100%);
+	margin: auto;
+	border-radius: 15px;
+	display: inline-block;
+	margin-top: 2.5vh;
+	margin-bottom: 2.5vh;
+}
+
+#googleplay_box:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
 
 /* MAIN 2048 */
 #title2048 {
@@ -191,7 +222,7 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 	font-size: 8.5vh;
   letter-spacing: 1vh;
 	padding: 1vh;
-	border-bottom: #6e5494 7.5px Solid;
+	border-bottom: #f59563 7.5px Solid;
 	color: #ffffff;
 	margin-left: 28%;
 	margin-top: 30vh;
@@ -199,27 +230,33 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 
 #main_2048 {
 	background: rgb(32,31,31);
-	background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
+	background: linear-gradient(212deg, rgba(32,31,31,1) 9%, rgba(79,79,79,1) 100%);
 	padding-bottom: 100px;
+	border-top: #f59563 5.5px Solid;
 }
 #main_2048 #msgContainer{
     margin: auto;
     margin-top: 20px;
+		margin-bottom: 20px;
     padding: 0 10px 10px 10px;
-    width: 50%;
-		background: rgb(32,31,31);
-background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
-    border-top: #9e81c5 4px Solid;
+    width: 40%;
+		background: rgb(110,84,148);
+		background: linear-gradient(219deg, rgba(110,84,148,1) 0%, rgba(167,139,208,1) 100%);
+    border: #eee4da 4px Solid;
     text-align: center;
-    color: #ffffff;
+    color: #2c2a2e;
+		font-weight: bold;
 }
 
 #msgContainer img {
     margin: auto;
     display: block;
     max-width: 100%;
-    width: auto;
     height: auto;
+}
+
+#msgContainer:hover {
+	box-shadow: 2px 1px 30px rgba(0,0,0,.5);
 }
 
 #msg2048 {
@@ -228,8 +265,8 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 }
 
 #gameContainer {
-	background: rgb(110,84,148);
-	background: linear-gradient(129deg, rgba(110,84,148,1) 0%, rgba(167,139,208,1) 100%);
+	background: rgb(238,228,218);
+	background: linear-gradient(129deg, rgba(238,228,218,1) 10%, rgba(245,149,99,1) 100%);
 	text-align: center;
 	border-bottom: #424242 7.5px Solid;
 }
@@ -244,15 +281,16 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 }
 
 #gameControl div {
-	font-size: 1vw;
-	color: #ffffff;
+	font-size: 1.1vw;
+	color: #2c2a2e;
+	font-weight: bold;
 	margin-top: 2%;
 	text-align: center;
 }
 #gameControl img {
 	height: 15%;
 	width: 15%;
-	margin-left: 25%;
+	margin-left: 25vw;
 }
 
 #gameScreen {
@@ -294,7 +332,7 @@ background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
 }
 #main-contact img {
 	cursor: pointer;
-	margin-right: 1.75vw;
+	margin-right: 1.75em;
 	height: 50px;
 	width: auto;
 }
