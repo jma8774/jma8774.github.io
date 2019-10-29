@@ -38,10 +38,10 @@ function highlightNav() {
   if ($(window).scrollTop() < scrollMax * 0.1) {
     $('#a-home').css('color', '#8A2BE2');
     $('#a-home').css('font-weight', 'bold');
-  } else if ($(window).scrollTop() >= scrollMax * 0.1 && $(window).scrollTop() < scrollMax * 0.275) {
+  } else if ($(window).scrollTop() >= scrollMax * 0.1 && $(window).scrollTop() < scrollMax * 0.265) {
     $('#a-intro').css('color', '#8A2BE2');
     $('#a-intro').css('font-weight', 'bold');
-  } else if ($(window).scrollTop() >= scrollMax * 0.275 && $(window).scrollTop() < scrollMax * 0.4225) {
+  } else if ($(window).scrollTop() >= scrollMax * 0.265 && $(window).scrollTop() < scrollMax * 0.4225) {
     $('#a-resume').css('color', '#8A2BE2');
     $('#a-resume').css('font-weight', 'bold');
   } else if ($(window).scrollTop() >= scrollMax * 0.4225 && $(window).scrollTop() < scrollMax * 0.53) {
