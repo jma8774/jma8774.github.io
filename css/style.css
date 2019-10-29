@@ -88,7 +88,7 @@ header img {
 #main_home {
 	overflow: hidden;
 	background: rgb(32,31,31);
-	background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
+	background: linear-gradient(146deg, rgba(32,31,31,1) 0%, rgba(80,80,80,1) 100%);
 	color: #dfe2e8;
 	text-align:center;
 	border-bottom: #6e5494 7.5px Solid;
@@ -111,7 +111,7 @@ header img {
 	border-top: #4f4f4f 7.5px Solid;
 	margin:auto;
 	background: rgb(110,84,148);
-	background: linear-gradient(129deg, rgba(110,84,148,1) 0%, rgba(167,139,208,1) 100%);
+	background: linear-gradient(158deg, rgba(110,84,148,1) 0%, rgba(193,167,231,1) 100%);
 	color: #ffffff;
 	padding-bottom: 50px;
 	padding-top: 1vh;
@@ -136,7 +136,7 @@ header img {
 
 #main_resume {
 	background: rgb(32,31,31);
-	background: linear-gradient(58deg, rgba(32,31,31,1) 0%, rgba(79,79,79,1) 100%);
+	background: linear-gradient(40deg, rgba(32,31,31,1) 9%, rgba(96,95,95,1) 100%);
 	color: #dfe2e8;
 	text-align:center;
 	padding-top: 2.5vh;
@@ -180,7 +180,7 @@ header img {
 /* MAIN PROJECTS */
 #main-projects {
 	background: rgb(32,31,31);
-	background: linear-gradient(166deg, rgba(32,31,31,1) 0%, rgba(65,64,64,1) 100%);
+	background: linear-gradient(146deg, rgba(32,31,31,1) 0%, rgba(80,80,80,1) 100%);
 	padding: 1vh;
 	border-bottom: #6e5494 7.5px Solid;
 	color: #ffffff;
