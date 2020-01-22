@@ -51,13 +51,12 @@
     }
 
     .parallax5 {
-      background-image: url("img/para5-2048.jpg");
-      min-height: 50vh;
+      background-image: url("img/para5-google.png");
+      min-height: 35vh;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      padding-top: 50vh;
     }
 
     .parallax6 {
@@ -80,7 +79,6 @@
     <a class='nava' id="a-intro" href="#intro-begin">Introduction</a>
     <a class='nava' id="a-resume" href="#resume-begin">Resume</a>
     <a class='nava' id="a-projects" href="#projects-begin">Projects</a>
-    <a class='nava' id="a-game" href="#game-begin">2048</a>
     <a class='nava' id="a-contact" href="#contact-begin">Contact</a>
   </div>
 
@@ -159,30 +157,40 @@
     </div>
   </main>
 
-  <div id="game-begin" class="parallax5 reveal-captions">
-    <span id="title2048"> 2048 (Incomplete) </span>
+  <div id="academic-begin" class="parallax5 reveal-captions">
   </div>
 
-  <main id="main_2048">
-    <div class="container">
-      <div id="msgContainer" class="reveal">
-        <p id="msg2048"> Scroll down to play the highly addictive 2048 game! </p>
-        <div>
-          <a href="https://itsfoss.com/2048-game/" target="_blank"> <img alt="Image taken from itsfloss.com" src="img/2048poster.jpeg">
-          </a>
-        </div>
-      </div>
+  <main id="main-projects">
+    <h1 class="reveal-right"> My Academic Projects <a href="https://github.com/jma8774/Fruit-Cutter" target="_blank"> <img src="./img/python.png" style="margin-left: 1.5%"> </a> </h1>
+    <br/>
+    <div class="reveal-right"> This is a food delivery app called Foodies developed by a group of friends for our Software Engineering class.
+          There was a specific set of criteria that each project must fulfill and for me, my job was to create a working map using Google Map API,
+          implementing a voice recognition feature, a food bidding system for the delivery person, as well as quality insurance to make sure everyone knows what they're doing because
+          it is their first time using Python and working with GUI. We had to do it in a very ugly way.
     </div>
+    <br/>
+    <iframe width="728" height="409.5" src="https://www.youtube.com/embed/9i7xZ5n21s8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="reveal-right">
+      The first thing I worked on doing is learning how to use the Google Map API to retrieve relevant information to display, such as the distance from one location to another, the time it would take, etc.
+      Once the delivery person completes their delivery, they can rate the customer (one of the criteria) and then the system will update the information.
+    </p>
+    <iframe width="728" height="409.5" src="https://www.youtube.com/embed/ypXeR_d-XUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="reveal-right">
+      The second thing I worked on is the bidding system (another criteria), where delivery people will have to compete with others to bid on an order to deliver. I think this is a very dumb
+      thing that an app should have but it was required by our professor. I have a timer running down and whenever a new order was placed, it would appear in the list. Each bidding lasts a minute.
+    </p>
+    <iframe width="728" height="409.5" src="https://www.youtube.com/embed/SgdUDon4IP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="reveal-right">
+      The last thing I had to work on was making a voice recognition feature (another criteria), which allows handicapped people to place food orders when using our app. I made a very basic version
+      using the SpeechRecognition and PyAudio modules.
+    </p>
+
+    </br>
+    <p class="reveal">
+      After combining everyone's work together and fixing my team's bugs, we presented our project to our professor and received a grade of 92 which was acceptable because some of us are inexperienced with Python.
+    </p>
+
   </main>
-
-  <div id="gameContainer">
-    <div id="gameControl" class="clearfix reveal">
-      <img src="img/arrowkeys.png">
-      <div> THE CONTROLS ARE VERY SIMPLE <br></br> SIMPLY PRESS THE ARROW KEYS TO SHIFT THE BOARD <br></br> JOIN THE NUMBERS UNTIL YOU GET 2048</div>
-    </div>
-    <canvas id="gameScreen" width="1152" height="648"></canvas>
-    <script src="src/2048.js"></script>
-  </div>
 
   <div id="contact-begin" class="parallax6 reveal-captions">
     <span id="titlelogos"> Contacts </span>
@@ -196,7 +204,7 @@
     </p>
     <div class="fade-in">
       <a href="https://github.com/jma8774" target="_blank"> <img src="./img/github.png"> </a>
-      <img src="./img/discord.png" onclick="copy('jeemong#2525', 'discord')"> <span class="popuptext" id='discord' style="margin-left: -140px;"> Copied to clipboard! </span>
+      <img src="./img/discord.png" onclick="copy('jeemong#1905', 'discord')"> <span class="popuptext" id='discord' style="margin-left: -140px;"> Copied to clipboard! </span>
       <img src="./img/gmail.png" onclick="copy('jma8774@bths.edu', 'gmail')"> <span class="popuptext" id='gmail' style="margin-left: -145px;"> Copied to clipboard! </span>
       <img src="./img/outlook.png" onclick="copy('jma007@citymail.cuny.edu', 'outlook')"> <span class="popuptext" id='outlook' style="margin-left: -140px;"> Copied to clipboard! </span>
       <a href="https://www.youtube.com/channel/UCxPrRXdkje9bYD8DsINJIFQ" target="_blank"> <img src="./img/youtube.png"> </a>

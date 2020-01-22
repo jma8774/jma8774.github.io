@@ -44,12 +44,9 @@ function highlightNav() {
   } else if ($(window).scrollTop() >= scrollMax * 0.265 && $(window).scrollTop() < scrollMax * 0.4225) {
     $('#a-resume').css('color', '#8A2BE2');
     $('#a-resume').css('font-weight', 'bold');
-  } else if ($(window).scrollTop() >= scrollMax * 0.4225 && $(window).scrollTop() < scrollMax * 0.53) {
+  } else if ($(window).scrollTop() >= scrollMax * 0.4225 && $(window).scrollTop() < scrollMax * 0.92) {
     $('#a-projects').css('color', '#8A2BE2');
     $('#a-projects').css('font-weight', 'bold');
-  } else if ($(window).scrollTop() >= scrollMax * 0.53 && $(window).scrollTop() < scrollMax * 0.92) {
-    $('#a-game').css('color', '#8A2BE2');
-    $('#a-game').css('font-weight', 'bold');
   } else {
     $('#a-contact').css('color', '#8A2BE2');
     $('#a-contact').css('font-weight', 'bold');
