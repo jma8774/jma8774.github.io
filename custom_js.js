@@ -27,7 +27,7 @@ var lastScrollTop = 0;
 $(document).ready(function(){
   $(window).scroll(function (event) {
     var curScrollTop = $(window).scrollTop();
-    if(curScrollTop > lastScrollTop || curScrollTop + + $(window).height() >= $(document).height()) {
+    if(curScrollTop > lastScrollTop || curScrollTop + $(window).height() >= $(document).height()) {
       $(".navbar").addClass("nav-trans-out");
       $(".navbar").removeClass("nav-trans-in");
       $('.navbar').removeClass("shadow-lg");
