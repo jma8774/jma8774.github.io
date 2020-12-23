@@ -2,9 +2,9 @@
 var isMobile = false;
 
 jQuery(function() {
+  alert("hi mobile 1");
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     isMobile = true;
-    alert("hi mobile");
   }
 });
 
@@ -94,23 +94,26 @@ jQuery(function() {
 });
 
 // Body
-  // Start At The Top and Animations
-jQuery(function() {
-  $(".elements").each(function(i, el) {
+function add_come_in(tag, idx) {
+  $(tag).each(function(i, el) {
     if ($(el).visible()) {
-      $(el).addClass("come-in");
+      setTimeout(function() { 
+        $(el).addClass("come-in");
+      }, 150 * i);
     }
   });
+}
+  // Start At The Top and Animations
+jQuery(function() {
+  let tags = ['.navhover', '.part1', '.part2', '.part3', '.part4', '.part5']
+  tags.forEach(add_come_in)
 });
 
   // Body Scrolling Options
   jQuery(function() {
   $(window).on("scroll", function (event) {
-    $(".elements").each(function(i, el) {
-      if ($(el).visible()) {
-        $(el).addClass("come-in"); 
-      }
-    });
+    let tags = ['.part1', '.part2', '.part3', '.part4', '.part5']
+    tags.forEach(add_come_in)
   });
 });
 

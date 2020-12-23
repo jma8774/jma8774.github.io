@@ -39,6 +39,10 @@ body, main {
   transition: 0.5s;
 }
 
+.navhover {
+  opacity: 0;
+}
+
 .navhover:hover {
   color: #b19cd9 !important;
   cursor: pointer;
@@ -59,8 +63,8 @@ body, main {
 }
 
 /* Elements Come In */
-.elements {
-  opacity: 0.4;
+.part1, .part2, .part3, .part4, .part5 {
+  opacity: 0;
 }
 
 .come-in {
@@ -68,7 +72,7 @@ body, main {
   -webkit-animation-name: come-in;
   -webkit-animation-duration: 0.4s;
   -webkit-animation-timing-function: ease-in;
-  -webkit-animation-delay: 0.375s;
+  -webkit-animation-delay: 0.15s;
   -webkit-animation-fill-mode: forwards;
 }
 
