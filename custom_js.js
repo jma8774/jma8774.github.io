@@ -2,7 +2,6 @@
 var isMobile = false;
 
 jQuery(function() {
-  alert("hey man");
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     isMobile = true;
   }
@@ -19,8 +18,7 @@ $(function () {
 
 // Navbar #################################################################################
   // Navbar Scrolling Options
-var dropdown_open = false;
-var lastScrollTop = 0;
+var lastScrollTop = Number.MAX_VALUE;
 jQuery(function() {
   $(window).on("scroll", function (event) {
     // Popover
@@ -31,10 +29,7 @@ jQuery(function() {
       $(".navbar").addClass("nav-trans-out");
       $(".navbar").removeClass("nav-trans-in");
       $('.navbar').removeClass("shadow-lg");
-      if(dropdown_open) {
-        $("#navbarDropdown").dropdown('toggle');
-        dropdown_open = false;
-      }
+      $("#navbarDropdown").dropdown('hide');
     } else {
       $(".navbar").addClass("nav-trans-in");
       $(".navbar").removeClass("nav-trans-out");
@@ -48,17 +43,8 @@ jQuery(function() {
     lastScrollTop = curScrollTop;
   });
 });
-jQuery(function() {
-  $("#navbarDropdown").on("click", function() {
-    if(!dropdown_open) {
-      dropdown_open = true;
-    } else {
-      dropdown_open = false;
-    }
-  });
-});
   // Navbar Width Options
-  jQuery(function() {
+jQuery(function() {
   if($(window).width() < 800 || isMobile){
     $('.desktop-nav').addClass("d-none");
     $('.mobile-nav').removeClass("d-none");
@@ -68,10 +54,10 @@ jQuery(function() {
   $(window).on('resize', function() {
     if($(window).width() < 800 || isMobile) {
       $('.desktop-nav').addClass("d-none");
-    $('.mobile-nav').removeClass("d-none");
+      $('.mobile-nav').removeClass("d-none");
     } else {
       $('.desktop-nav').removeClass("d-none");
-    $('.mobile-nav').addClass("d-none");
+      $('.mobile-nav').addClass("d-none");
     }
   });
 });
@@ -111,11 +97,21 @@ function add_come_in(tag, idx) {
 }
   // Initial Slide Ins
 jQuery(function() {
-  let tags = ['.nav-anim', '.part1', '.part2', '.part3', '.part4', '.part5']
+  let tags = ['.left-nav-anim','.part1', '.part2', '.part3', '.part4', '.part5']
+  // mobile right nav
+  setTimeout(function() { 
+    $('.mobile-right-nav-anim').addClass("come-in");
+  }, 300);
+  // desktop right nav
+  $(".right-nav-anim").each(function(i, el) {
+    setTimeout(function() { 
+      $(el).addClass("come-in");
+    }, 300 + (150 * i));
+  });
   tags.forEach(add_come_in)
 });
   // Scrolling Slide Ins
-  jQuery(function() {
+jQuery(function() {
   $(window).on("scroll", function (event) {
     let tags = ['.part1', '.part2', '.part3', '.part4', '.part5']
     tags.forEach(add_come_in)

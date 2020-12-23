@@ -59,7 +59,7 @@ body, main {
 }
 
 /* Elements Come In */
-.nav-anim, .part1, .part2, .part3, .part4, .part5 {
+.left-nav-anim, .right-nav-anim, .mobile-right-nav-anim, .part1, .part2, .part3, .part4, .part5 {
   opacity: 0;
 }
 
