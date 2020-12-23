@@ -1,234 +1,81 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Jia Ming Ma">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>Jia Ming Ma</title>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/2bf095b9ea.js" crossorigin="anonymous"></script>
+    <!-- JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom css/js for this template -->
+    <link href="custom_css.css" rel="stylesheet">
+    <script src="custom_js.js"></script>
+  </head>
 
-<head>
-  <script src="https://unpkg.com/scrollreveal"> </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./src/jquery.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jia Ming's GitHub Page">
-  <meta name="author" content="Jia Ming Ma">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <title> Jia Ming's GitHub Page </title>
-  <style>
-    .parallax1 {
-      background-image: url("img/para1-cat.jpg");
-      min-height: 80vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .parallax2 {
-      background-image: url("img/para2-pc.jpg");
-      min-height: 50vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-
-    .parallax3 {
-      background-image: url("img/para3-skills.png");
-      height: 40vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-
-    }
-
-    .parallax4 {
-      background-image: url("img/para4-android.png");
-      min-height: 35vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .parallax5 {
-      background-image: url("img/para5-google.png");
-      min-height: 35vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .parallax6 {
-      background-image: url("img/para6-logos.jpg");
-      min-height: 35vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-top: 25vh;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="navbar">
-    <a href="https://github.com/jma8774" target="_blank"> <img src="img/caticon.jpg" alt="Avatar"> </a>
-    <a class='nava' id="a-home" href="#home-begin">Home</a>
-    <a class='nava' id="a-intro" href="#intro-begin">Introduction</a>
-    <a class='nava' id="a-resume" href="#resume-begin">Resume</a>
-    <a class='nava' id="a-projects" href="#projects-begin">Projects</a>
-    <a class='nava' id="a-contact" href="#contact-begin">Contact</a>
-  </div>
-
-  <div id="home-begin" class="parallax1"></div>
-
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div id="headermsg">
-        <a class="reveal-right" href="https://github.com/jma8774" target="_blank"> <img src="img/octocat.png"> </a>
-        <div class="reveal-right"> <span class="highlight">Jia Ming's </span> GitHub Page </div>
+  <body class="mt-5 py-5 bg-dark text-dark">
+    <nav class="navbar navbar-dark bg-dark navbar-expand justify-content-between fixed-top py-3">
+      <div>
+        <button type="button" class="btn btn-dark bg-red btn-circle ml-3" data-toggle="popover" title="Hey there!" data-placement="bottom" data-content="If you have any suggestions for the website, please let me know. Enjoy your stay! 😃">
+          <i class="fas fa-heart"></i>
+        </button>
+        <button type="button" id="btn-github" class="btn btn-dark bg-purple btn-circle ml-3" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+          <i class="fab fa-github"></i>
+        </button>
       </div>
-    </div>
-  </header>
+      <ul class="navbar-nav desktop-nav">
+            <li class="nav-item my-auto mr-5 text-light font-size-small navhover">
+                <span class="text-purple">01.</span> About
+            </li>
+            <li class="nav-item my-auto mr-5 text-light font-size-small navhover">
+                <span class="text-purple">02.</span> Project
+            </li>
+            <li class="nav-item my-auto mr-5 text-light font-size-small navhover">
+                <span class="text-purple">03.</span> Contact
+            </li>
+            <li class="nav-item my-auto mr-5 ">
+              <button type="button" class="btn btn-dark float-right text-purple border-purple font-size-small btn-resume">
+                Resume
+              </button>
+            </li>
+      </ul>
+      <ul class="navbar-nav mobile-nav d-none">
+        <li class="nav-item dropdown">
+          <button type="button" class="nav-link btn btn-dark border-purple font-size-small mr-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span><i class="fas fa-bars fa-lg mx-1 text-purple"></i></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right bg-darker border-darker shadow-lg mt-2 text-light" aria-labelledby="navbarDropdown">
+              <div class="navhover font-size-small text-center py-2"> 
+                <span class="text-purple">01.</span> </br> About
+              </div>
+              <div class="navhover font-size-small text-center py-2"> 
+                <span class="text-purple">02.</span> </br> Project
+              </div>
+              <div class="navhover font-size-small text-center py-2"> 
+                <span class="text-purple">03.</span> </br> Contact
+              </div>
+              <div class="text-center py-2">
+                <button type="button" class="btn btn-dark text-purple border-purple font-size-small btn-resume">
+                  Resume
+                </button>
+              </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </body>
 
-  <div class="parallax2 fade-in"></div>
-
-  <!-- Main -->
-  <main id="main_home">
-    <div id="intro-begin">
-      <h1 class="reveal-title"> Introduction </h1>
-      <p class="reveal-right">
-        Hello and welcome to my GitHub page. My name's Jia Ming Ma and I am currently attending college at the City College of New York.
-        I took computer science in Brooklyn Technical High School and eventually fell in love with computer programming and how everything comes together to create apps that you take for granted using everyday.
-        And so, I decided to continue being a computer science major even in college and am currently looking for internships in the field.
-      </p>
-      </br>
-      <p class="reveal-right">
-        I am currently interested in software development or game development on either Android or on the computer and is open for any entry-level internship.
-        Once I get the free time, I am going to commit to making a real game by using Unity's game engine and C# to create it's scripts.
-        Other than that, I am also interested in iOS development, blockchains, cryto-currency and cyber security.
-      </p>
-    </div>
-  </main>
-
-  <div id="resume-begin" class="parallax3 fade-in"></div>
-
-  <main id="main_skills">
-    <div>
-    <h1 class="reveal-title"> My Skills </h1>
-    <div class="fade-in"> <img src="./img/java.png"> <img src="./img/android.png"> <img src="./img/cpp.png"> <img src="./img/github.png"> <img src="./img/python.png"> <img src="./img/mysql.png"> <img src="./img/javascript.png"> <img src="./img/html.png"> <img src="./img/css.png"> </div>
-    <p class="reveal-right">
-      I specialize in Java, Android Development, C++, Python and as well as utilizing GitHub. I am also able to code with MySQL, Javascript, HTML and CSS. </br>
-      Have a basic understanding of Microsoft programs like Word, Excel and Powerpoint. </br>
-      Knowledgable in computer hardware.
-    </p>
-    </div>
-  </main>
-
-  <main id="main_resume">
-  <div class="reveal">
-    <a href="./resume.pdf" target="_blank">
-      <div id="resume_box"> <div> Resume </div> <img src="img/resume.png"> </div>
-    </a>
-  </div>
-  </main>
-
-  <div id="projects-begin" class="parallax4 reveal-captions"> </div>
-
-  <main id="main-projects">
-    <h1 class="reveal-right"> My Personal Projects <a href="https://github.com/jma8774/Fruit-Cutter" target="_blank"> <img src="./img/android.png" style="margin-left: 1.5%"> </a> </h1>
-    <iframe src="https://itch.io/embed/685366" height="167" width="552" frameborder="0"><a href="https://jeemong.itch.io/demo-platformer">Demo Platformer by jeemong</a></iframe>
-    <br/>
-    <p class="reveal-right">
-      This platformer game was one of the mini projects I did over the summer. Above is a demo of the game. My progress and the key commands (ZXCR) can be found <a href="https://github.com/jma8774/Unity-Platformer" target="_blank">here</a> on my GitHub.
-    </p>
-    <iframe width="728" height="409.5" src="https://www.youtube.com/embed/PZk43TtAyWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <br/>
-    <p class="reveal-right">
-      This is my personal Android game called "Fruit Assassin" and the purpose of this game is to reach as high of a score as possible without hitting any of the ducks. You can click on the picture to view the demo.
-      <br/> It was coded in Android Studio using Java as the main language and Photoshop was used in the process to create all the pixel elements.
-    </p>
-    <div>
-       <img src="./img/oop.png">
-       <div class="reveal-right"> Was made using Object Oriented Progamming logic, making it easy and straight forward. This allowed me to easily make changes to the game whenever I thought of a new idea.</div>
-       <div id="googleplay_box">
-         <a href="https://play.google.com/store/apps/details?id=com.jeemong.androids.js" target="_blank">
-             <img id="googleplay" src="./img/googleplay.png">
-         </a>
-      </div>
-    </div>
-  </main>
-
-  <div id="academic-begin" class="parallax5 reveal-captions">
-  </div>
-
-  <main id="main-projects">
-    <h1 class="reveal-right"> My Academic Projects <a href="https://github.com/jma8774/Fruit-Cutter" target="_blank"> <img src="./img/python.png" style="margin-left: 1.5%"> </a> </h1>
-    <br/>
-    <div class="reveal-right"> This is a food delivery app called Foodies developed by a group of friends for our Software Engineering class.
-          There was a specific set of criteria that each project must fulfill and for me, my job was to create a working map using Google Map API,
-          implementing a voice recognition feature, a food bidding system for the delivery person, as well as quality insurance to make sure everyone knows what they're doing because
-          it is their first time using Python and working with GUI. We had to do it in a very ugly way.
-    </div>
-    <br/>
-    <iframe width="728" height="409.5" src="https://www.youtube.com/embed/9i7xZ5n21s8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="reveal-right">
-      The first thing I worked on doing is learning how to use the Google Map API to retrieve relevant information to display, such as the distance from one location to another, the time it would take, etc.
-      Once the delivery person completes their delivery, they can rate the customer (one of the criteria) and then the system will update the information.
-    </p>
-    <iframe width="728" height="409.5" src="https://www.youtube.com/embed/ypXeR_d-XUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="reveal-right">
-      The second thing I worked on is the bidding system (another criteria), where delivery people will have to compete with others to bid on an order to deliver. I think this is a very dumb
-      thing that an app should have but it was required by our professor. I have a timer running down and whenever a new order was placed, it would appear in the list. Each bidding lasts a minute.
-    </p>
-    <iframe width="728" height="409.5" src="https://www.youtube.com/embed/SgdUDon4IP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="reveal-right">
-      The last thing I had to work on was making a voice recognition feature (another criteria), which allows handicapped people to place food orders when using our app. I made a very basic version
-      using the SpeechRecognition and PyAudio modules.
-    </p>
-
-    </br>
-    <p class="reveal">
-      After combining everyone's work together and fixing my team's bugs, we presented our project to our professor and received a grade of 92 which was acceptable because some of us are inexperienced with Python.
-    </p>
-
-  </main>
-
-  <div id="contact-begin" class="parallax6 reveal-captions">
-    <span id="titlelogos"> Contacts </span>
-  </div>
-
-  <main id="main-contact">
-    <p class="reveal-right">
-      Thanks for looking through my website, I can be reached via the contacts below, click on whichever you prefer.
-    </br>
-      All pictures and figures that are not mine belong to their rightful owners, and therefore, I take no credit for any of it. If there's any problem please contact me.
-    </p>
-    <div class="fade-in">
-      <a href="https://github.com/jma8774" target="_blank"> <img src="./img/github.png"> </a>
-      <img src="./img/discord.png" onclick="copy('mong#1905', 'discord')"> <span class="popuptext" id='discord' style="margin-left: -140px;"> Copied to clipboard! </span>
-      <img src="./img/gmail.png" onclick="copy('jma8774@bths.edu', 'gmail')"> <span class="popuptext" id='gmail' style="margin-left: -145px;"> Copied to clipboard! </span>
-      <img src="./img/outlook.png" onclick="copy('jma007@citymail.cuny.edu', 'outlook')"> <span class="popuptext" id='outlook' style="margin-left: -140px;"> Copied to clipboard! </span>
-      <a href="https://www.youtube.com/channel/UCxPrRXdkje9bYD8DsINJIFQ" target="_blank"> <img src="./img/youtube.png"> </a>
-    </div>
-  </main>
-
-
-  <!-- Footer -->
-  <footer>
-
-
-  </footer>
-
-</body>
-<script>
-  ScrollReveal().reveal('.reveal-title', {duration: 1500, origin: 'left', distance: "300px", delay: "0", reset: "true", rotate: {x: 50, z: 50}});
-  ScrollReveal().reveal('.reveal-captions', {duration: 1500, origin: 'left', distance: "300px", delay: "0", reset: "true", rotate: {x: -100, y: -100, z: -100}});
-  ScrollReveal().reveal('.reveal-right', {duration: 1500, origin: 'right', distance: "400px", delay: "200", reset: "true"});
-  ScrollReveal().reveal('.reveal', {duration: 1500, origin: 'bottom', distance: "400px", delay: "0", reset: "true", scale: 0.3});
-  ScrollReveal().reveal('.fade-in', {duration: 1000, origin: 'bottom', delay: "0", reset: "true", scale: 0.4});
-</script>
+<main role="main" class="container text-center bg-dark">
+</br> </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</main><!-- /.container -->
 </html>

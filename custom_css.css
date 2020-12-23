@@ -1,0 +1,55 @@
+body, main {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-purple {
+  color: #b19cd9;
+}
+
+.border-purple {
+  border-color: #b19cd9;
+}
+
+.bg-purple {
+  background-color: #b19cd9;
+}
+
+.border-darker {
+  border-color: #2e3338;
+}
+
+.bg-darker {
+  background-color: #2e3338;
+}
+
+.bg-red {
+  background-color: #d9534f;
+}
+
+.font-size-small {
+  font-size: 0.85rem;
+}
+
+.navbar {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.navhover:hover {
+  color: #b19cd9 !important;
+  cursor: pointer;
+}
+
+/* Navbar Ease In/Out */
+.nav-trans-in {
+  transform: translateY(0);
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  background-color: rgba(52, 58, 64, 0.90) !important;
+}
+
+.nav-trans-out {
+  transition: 0.35s;
+  transition-timing-function: ease-out;
+  transform: translateY(-130%);
+}
