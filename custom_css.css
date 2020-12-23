@@ -65,8 +65,18 @@ body, main {
 
 .come-in {
   transform: translateY(25px);
+  -webkit-transform: translateY(25px); 
   opacity: 0;
+  -webkit-opacity: 0;
   animation: come-in 0.4s ease-in 0.375s forwards;
+  -webkit-animation: come-in 0.4s ease-in 0.375s forwards;
+}
+
+@-webkit-keyframes come-in {
+  to { 
+    -webkit-transform: translateY(0); 
+    -webkit-opacity: 1;
+  }
 }
 
 @keyframes come-in {
