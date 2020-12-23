@@ -2,7 +2,6 @@
 var isMobile = false;
 
 jQuery(function() {
-  alert("hi mobile 1");
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     isMobile = true;
   }
@@ -94,13 +93,21 @@ jQuery(function() {
 });
 
 // Body
+// function add_come_in(tag, idx) {
+//   $(tag).each(function(i, el) {
+//     if ($(el).visible()) {
+//       setTimeout(function() { 
+//         $(el).addClass("come-in");
+//       }, 150 * i);
+//     }
+//   });
+// }
+
 function add_come_in(tag, idx) {
   $(tag).each(function(i, el) {
-    if ($(el).visible()) {
-      setTimeout(function() { 
-        $(el).addClass("come-in");
-      }, 150 * i);
-    }
+    setTimeout(function() { 
+      $(el).addClass("come-in");
+    }, 150 * i);
   });
 }
   // Start At The Top and Animations
