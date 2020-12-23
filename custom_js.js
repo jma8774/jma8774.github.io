@@ -40,7 +40,7 @@ $(document).ready(function(){
       $(".navbar").removeClass("nav-trans-out");
       $('.navbar').addClass("shadow-lg");
     }
-    if(curScrollTop == 0){
+    if(curScrollTop <= 0){
       $('.navbar').removeClass("shadow-lg");
       $(".navbar").removeClass("nav-trans-out");
       $(".navbar").removeClass("nav-trans-in");
@@ -51,7 +51,11 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#navbarDropdown").click(function() {
-    pulldown_open = true;
+    if(!pulldown_open) {
+      pulldown_open = true;
+    } else {
+      pulldown_open = false;
+    }
   });
 });
 
