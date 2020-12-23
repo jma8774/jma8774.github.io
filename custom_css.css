@@ -45,7 +45,7 @@ body, main {
   transform: translateY(0);
   transition-timing-function: ease-in;
   transition: 0.3s;
-  background-color: rgba(52, 58, 64, 0.90) !important;
+  background-color: rgba(52, 58, 64, 0.95) !important;
 }
 
 .nav-trans-out {
