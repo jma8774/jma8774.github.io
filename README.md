@@ -13,7 +13,7 @@ First update to the remake of the website consists of improving the Navbar. Scro
 * Eases In/Out of the Navbar in the user's viewport when the user scrolls.
 
 ## Update 2
-Second upate focused on adding in sliding effects for when elements are presented on the user's viewport. Tested on iOS Safari and Desktop Chrome.
+Second update focuses on adding in sliding effects for when elements are presented on the user's viewport. Tested on iOS Safari and Desktop Chrome.
 * Navbar will slide in when the user loads the site.
 
 * As the user scrolls, elements will slide in once they're in the resolution of the user's viewport.
