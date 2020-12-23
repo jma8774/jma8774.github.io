@@ -60,7 +60,7 @@ body, main {
 
 /* Elements Come In */
 .elements {
-  opacity: 0;
+  opacity: 1;
 }
 
 .come-in {
@@ -77,6 +77,10 @@ body, main {
 }
 
 @-webkit-keyframes come-in {
+  from {
+    -webkit-transform: translateY(25px); 
+    -webkit-opacity: 0;
+  }
   to { 
     -webkit-transform: translateY(0); 
     -webkit-opacity: 1;
@@ -84,6 +88,10 @@ body, main {
 }
 
 @keyframes come-in {
+  from {
+    transform: translateY(25px); 
+    opacity: 0;
+  }
   to { 
     transform: translateY(0); 
     opacity: 1;

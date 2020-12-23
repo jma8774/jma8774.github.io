@@ -1,7 +1,7 @@
 // Detect Mobile
 var isMobile = false;
 
-$(document).ready(function(){
+jQuery(function() {
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     isMobile = true;
   }
@@ -20,8 +20,8 @@ $(function () {
   // Navbar Scrolling Options
 var dropdown_open = false;
 var lastScrollTop = 0;
-$(document).ready(function(){
-  $(window).scroll(function (event) {
+jQuery(function() {
+  $(window).on("scroll", function (event) {
     // Popover
     $('#btn-heart').popover('hide');
     // Toggle Navbar/Dropdown
@@ -48,8 +48,8 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  $("#navbarDropdown").click(function() {
+jQuery(function() {
+  $("#navbarDropdown").on("click", function() {
     if(!dropdown_open) {
       dropdown_open = true;
     } else {
@@ -59,14 +59,14 @@ $(document).ready(function(){
 });
 
   // Navbar Width Options
-$(document).ready(function(){
+  jQuery(function() {
   if($(window).width() < 800 || isMobile){
     $('.desktop-nav').addClass("d-none");
     $('.mobile-nav').removeClass("d-none");
   }
 });
 
-$(document).ready(function(){
+jQuery(function() {
   $(window).on('resize', function() {
     if($(window).width() < 800 || isMobile) {
       $('.desktop-nav').addClass("d-none");
@@ -79,32 +79,32 @@ $(document).ready(function(){
 });
 
   // GitHub Button
-$(document).ready(function(){
-  $("#btn-github").click(function(){
+jQuery(function() {
+  $("#btn-github").on("click", function() {
     window.open('https://github.com/jma8774', '_blank');
   });
 });
 
   // Resume Button
-$(document).ready(function(){
-  $(".btn-resume").click(function(){
+jQuery(function() {
+  $(".btn-resume").on("click", function() {
     window.open('resume.pdf', '_blank');
   });
 });
 
 // Body
   // Start At The Top and Animations
-jQuery(function(){
+jQuery(function() {
   $(".elements").each(function(i, el) {
     if ($(el).visible()) {
-      $(el).addClass("come-in"); 
+      $(el).addClass("come-in");
     }
   });
 });
 
   // Body Scrolling Options
-$(document).ready(function(){
-  $(window).scroll(function (event) {
+  jQuery(function() {
+  $(window).on("scroll", function (event) {
     $(".elements").each(function(i, el) {
       if ($(el).visible()) {
         $(el).addClass("come-in"); 
