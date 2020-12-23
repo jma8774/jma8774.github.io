@@ -1,0 +1,22 @@
+{
+  "name": "jma8774.github.io",
+  "version": "1.0.0",
+  "description": "Click [here](https://jma8774.github.io/) to go to my GitHub page.",
+  "main": "custom_js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jma8774/jma8774.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jma8774/jma8774.github.io/issues"
+  },
+  "homepage": "https://github.com/jma8774/jma8774.github.io#readme",
+  "dependencies": {
+    "jquery-visible": "^1.2.0"
+  }
+}

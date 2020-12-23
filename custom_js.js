@@ -3,10 +3,6 @@ var isMobile = false;
 
 $(document).ready(function(){
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    $('#a1-v').prop('controls',true);
-    $('#a2-v').prop('controls',true);
-    $('#a3-v').prop('controls',true);
-    $('#a4-v').prop('controls',true);
     isMobile = true;
   }
 });
@@ -22,25 +18,28 @@ $(function () {
 
 // Navbar
   // Navbar Scrolling Options
-var pulldown_open = false;
+var dropdown_open = false;
 var lastScrollTop = 0;
 $(document).ready(function(){
   $(window).scroll(function (event) {
+    // Popover
+    $('#btn-heart').popover('hide');
+    // Toggle Navbar/Dropdown
     var curScrollTop = $(window).scrollTop();
-    if(curScrollTop > lastScrollTop || curScrollTop + $(window).height() >= $(document).height()) {
+    if(curScrollTop > lastScrollTop) {
       $(".navbar").addClass("nav-trans-out");
       $(".navbar").removeClass("nav-trans-in");
       $('.navbar').removeClass("shadow-lg");
-      if(pulldown_open) {
+      if(dropdown_open) {
         $("#navbarDropdown").dropdown('toggle');
-        pulldown_open = false;
+        dropdown_open = false;
       }
     } else {
       $(".navbar").addClass("nav-trans-in");
       $(".navbar").removeClass("nav-trans-out");
       $('.navbar').addClass("shadow-lg");
     }
-    if(curScrollTop <= 0){
+    if(curScrollTop <= 50){
       $('.navbar').removeClass("shadow-lg");
       $(".navbar").removeClass("nav-trans-out");
       $(".navbar").removeClass("nav-trans-in");
@@ -51,10 +50,10 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#navbarDropdown").click(function() {
-    if(!pulldown_open) {
-      pulldown_open = true;
+    if(!dropdown_open) {
+      dropdown_open = true;
     } else {
-      pulldown_open = false;
+      dropdown_open = false;
     }
   });
 });
@@ -87,8 +86,32 @@ $(document).ready(function(){
 });
 
   // Resume Button
-  $(document).ready(function(){
-    $(".btn-resume").click(function(){
-      window.open('resume.pdf', '_blank');
+$(document).ready(function(){
+  $(".btn-resume").click(function(){
+    window.open('resume.pdf', '_blank');
+  });
+});
+
+// Body
+  // Start At The Top and Animations
+jQuery(function(){
+  $(".elements").each(function(i, el) {
+    if ($(el).visible()) {
+      $(el).addClass("come-in"); 
+    }
+  });
+});
+
+  // Body Scrolling Options
+$(document).ready(function(){
+  $(window).scroll(function (event) {
+    $(".elements").each(function(i, el) {
+      if ($(el).visible()) {
+        $(el).addClass("come-in"); 
+      }
     });
   });
+});
+
+
+  

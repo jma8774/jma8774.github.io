@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body, main {
   font-family: 'Roboto', sans-serif;
 }
@@ -44,12 +48,30 @@ body, main {
 .nav-trans-in {
   transform: translateY(0);
   transition-timing-function: ease-in;
-  transition: 0.3s;
+  transition: 0.2s;
   background-color: rgba(52, 58, 64, 0.95) !important;
 }
 
 .nav-trans-out {
-  transition: 0.35s;
+  transition: 0.25s;
   transition-timing-function: ease-out;
   transform: translateY(-130%);
+}
+
+/* Elements Come In */
+.elements {
+  opacity: 0;
+}
+
+.come-in {
+  transform: translateY(25px);
+  opacity: 0;
+  animation: come-in 0.4s ease-in 0.375s forwards;
+}
+
+@keyframes come-in {
+  to { 
+    transform: translateY(0); 
+    opacity: 1;
+  }
 }
