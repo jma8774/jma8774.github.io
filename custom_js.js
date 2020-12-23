@@ -2,6 +2,7 @@
 var isMobile = false;
 
 jQuery(function() {
+  alert("hey man");
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     isMobile = true;
   }
@@ -16,7 +17,7 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
-// Navbar
+// Navbar #################################################################################
   // Navbar Scrolling Options
 var dropdown_open = false;
 var lastScrollTop = 0;
@@ -47,7 +48,6 @@ jQuery(function() {
     lastScrollTop = curScrollTop;
   });
 });
-
 jQuery(function() {
   $("#navbarDropdown").on("click", function() {
     if(!dropdown_open) {
@@ -57,7 +57,6 @@ jQuery(function() {
     }
   });
 });
-
   // Navbar Width Options
   jQuery(function() {
   if($(window).width() < 800 || isMobile){
@@ -65,7 +64,6 @@ jQuery(function() {
     $('.mobile-nav').removeClass("d-none");
   }
 });
-
 jQuery(function() {
   $(window).on('resize', function() {
     if($(window).width() < 800 || isMobile) {
@@ -77,14 +75,12 @@ jQuery(function() {
     }
   });
 });
-
   // GitHub Button
 jQuery(function() {
   $("#btn-github").on("click", function() {
     window.open('https://github.com/jma8774', '_blank');
   });
 });
-
   // Resume Button
 jQuery(function() {
   $(".btn-resume").on("click", function() {
@@ -92,31 +88,33 @@ jQuery(function() {
   });
 });
 
-// Body
-// function add_come_in(tag, idx) {
-//   $(tag).each(function(i, el) {
-//     if ($(el).visible()) {
-//       setTimeout(function() { 
-//         $(el).addClass("come-in");
-//       }, 150 * i);
-//     }
-//   });
-// }
+// Slide In #################################################################################
+  // Check if element is visible in viewport
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
 
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+  // Given a tag, make them slide in order
 function add_come_in(tag, idx) {
   $(tag).each(function(i, el) {
-    setTimeout(function() { 
-      $(el).addClass("come-in");
-    }, 150 * i);
+    if ($(el).isInViewport()) {
+      setTimeout(function() { 
+        $(el).addClass("come-in");
+      }, 150 * i);
+    }
   });
 }
-  // Start At The Top and Animations
+  // Initial Slide Ins
 jQuery(function() {
-  let tags = ['.navhover', '.part1', '.part2', '.part3', '.part4', '.part5']
+  let tags = ['.nav-anim', '.part1', '.part2', '.part3', '.part4', '.part5']
   tags.forEach(add_come_in)
 });
-
-  // Body Scrolling Options
+  // Scrolling Slide Ins
   jQuery(function() {
   $(window).on("scroll", function (event) {
     let tags = ['.part1', '.part2', '.part3', '.part4', '.part5']

@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/jma8774/jma8774.github.io/issues"
   },
-  "homepage": "https://github.com/jma8774/jma8774.github.io#readme",
-  "dependencies": {
-    "jquery-visible": "^1.2.0"
-  }
+  "homepage": "https://github.com/jma8774/jma8774.github.io#readme"
 }
