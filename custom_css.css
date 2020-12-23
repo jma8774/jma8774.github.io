@@ -69,7 +69,11 @@ body, main {
   opacity: 0;
   -webkit-opacity: 0;
   animation: come-in 0.4s ease-in 0.375s forwards;
-  -webkit-animation: come-in 0.4s ease-in 0.375s forwards;
+  -webkit-animation-name: come-in;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-delay: 0.375s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes come-in {
