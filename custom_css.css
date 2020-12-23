@@ -60,14 +60,10 @@ body, main {
 
 /* Elements Come In */
 .elements {
-  opacity: 1;
+  opacity: 0;
 }
 
 .come-in {
-  transform: translateY(25px);
-  -webkit-transform: translateY(25px); 
-  opacity: 0;
-  -webkit-opacity: 0;
   animation: come-in 0.4s ease-in 0.375s forwards;
   -webkit-animation-name: come-in;
   -webkit-animation-duration: 0.4s;
