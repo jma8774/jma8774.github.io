@@ -17,8 +17,31 @@ function add_slide_in(tag, idx) {
     }
   });
 }
-
-var atTop = false;
+function title_slide(isScroll, offset) {
+  var delay = 1100;
+  if(isScroll) delay = 500;
+  $(".title-anim").each(function(i, el) {
+    setTimeout(function() { 
+      if($(el).isInViewport())
+        $(el).addClass("title-slide-up");
+    }, delay + offset + (200 * i));
+  });
+}
+function navbar_slide() {
+  $(".left-nav-anim").each(function(i, el) {
+    setTimeout(function() { 
+      $(el).addClass("slide-down");
+    }, 150 * i);
+  });
+  $(".right-nav-anim").each(function(i, el) {
+    setTimeout(function() { 
+      $(el).addClass("slide-down");
+    }, 300 + (150 * i));
+  });
+  setTimeout(function() { 
+    $('.mobile-right-nav-anim').addClass("slide-down");
+  }, 300);
+}
 
 // Document.Ready()
 jQuery(function() {
@@ -38,21 +61,14 @@ jQuery(function() {
     $('.mobile-nav').removeClass("d-none");
   }
     // Slide In
-  let tags = ['.title-anim', '.part1', '.part2', '.part3', '.part4', '.part5']
+  let tags = ['.part1', '.part2', '.part3', '.part4', '.part5']
   tags.forEach(add_slide_in)
-  $(".left-nav-anim").each(function(i, el) {
-    setTimeout(function() { 
-      $(el).addClass("slide-down");
-    }, 150 * i);
-  });
-  $(".right-nav-anim").each(function(i, el) {
-    setTimeout(function() { 
-      $(el).addClass("slide-down");
-    }, 300 + (150 * i));
-  });
-  setTimeout(function() { 
-    $('.mobile-right-nav-anim').addClass("slide-down");
-  }, 300);
+  navbar_slide();
+  if($(window).width() < 800 || isMobile) 
+    title_slide(false, 0);
+  else {
+    title_slide(false, 450);
+  }
 
   
   // On Resize
@@ -96,8 +112,9 @@ jQuery(function() {
     }
     lastScrollTop = curScrollTop;
     // Slide In
-    let tags = ['.title-anim', '.part1', '.part2', '.part3', '.part4', '.part5']
+    let tags = ['.part1', '.part2', '.part3', '.part4', '.part5']
     tags.forEach(add_slide_in)
+    title_slide(true, 0);
   });
 
 
@@ -109,6 +126,15 @@ jQuery(function() {
     // Resume Button
   $(".btn-resume").on("click", function() {
     window.open('resume.pdf', '_blank');
+  });
+
+
+  // On Mouse Hover
+  $("#btn-work").mouseover(function() {
+    $(".arrow-rotate").css("transform", "rotate(90deg)");
+  });
+  $("#btn-work").mouseleave(function() {
+    $(".arrow-rotate").css("transform", "rotate(0deg)");
   });
 });
 
