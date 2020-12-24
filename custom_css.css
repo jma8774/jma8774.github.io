@@ -7,11 +7,12 @@
 
 html {
   scroll-behavior: smooth;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 #name {
+  color: red !important;
   font-size: 3rem;
 }
 
@@ -23,10 +24,11 @@ html {
 @media (min-width: 576px) {
   html {
     scroll-behavior: smooth;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
   #name {
+    color: blue !important;
     font-size: 3.5rem;
   }
   #name-body {
