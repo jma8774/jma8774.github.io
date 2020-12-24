@@ -12,7 +12,6 @@ html {
 }
 
 #name {
-  color: red !important;
   font-size: 3rem;
 }
 
@@ -28,7 +27,6 @@ html {
     padding-right: 1.25rem;
   }
   #name {
-    color: blue !important;
     font-size: 3.5rem;
   }
   #name-body {
