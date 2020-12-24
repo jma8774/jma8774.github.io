@@ -7,6 +7,8 @@
 
 html {
   scroll-behavior: smooth;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #name {
@@ -19,6 +21,11 @@ html {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  html {
+    scroll-behavior: smooth;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   #name {
     font-size: 3.5rem;
   }
@@ -50,6 +57,7 @@ html {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
   #name {
+    color: white !important;
     font-size: 6rem;
   }
   #name-body {
