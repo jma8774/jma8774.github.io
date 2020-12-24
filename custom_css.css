@@ -1,5 +1,60 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
   scroll-behavior: smooth;
+}
+
+#name {
+  font-size: 3rem;
+}
+
+#name-body {
+  font-size: 1.25rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #name {
+    font-size: 3.5rem;
+  }
+  #name-body {
+    font-size: 1.25rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #name {
+    font-size: 4rem;
+  }
+  #name-body {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #name {
+    font-size: 5rem;
+  }
+  #name-body {
+    font-size: 1.75rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  #name {
+    font-size: 6rem;
+  }
+  #name-body {
+    font-size: 2rem;
+  }
 }
 
 body, main {
@@ -8,6 +63,14 @@ body, main {
 
 .text-purple {
   color: #b19cd9;
+}
+
+.text-title-purple {
+  color: #e4cfff;
+}
+
+.text-secondary-purple {
+  color: #b5aacb;
 }
 
 .border-purple {
@@ -35,7 +98,11 @@ body, main {
 }
 
 .navbar {
-  transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -46,29 +113,41 @@ body, main {
 
 /* Navbar Ease In/Out */
 .nav-trans-in {
-  transform: translateY(0);
-  transition-timing-function: ease-in;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   background-color: rgba(52, 58, 64, 0.95) !important;
 }
 
 .nav-trans-out {
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
   transition: 0.25s;
-  transition-timing-function: ease-out;
-  transform: translateY(-130%);
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: translateY(-130%);
+      -ms-transform: translateY(-130%);
+          transform: translateY(-130%);
 }
 
-/* Elements Come In */
-.left-nav-anim, .right-nav-anim, .mobile-right-nav-anim, .part1, .part2, .part3, .part4, .part5 {
+/* Elements Slide Up */
+.title-anim, .left-nav-anim, .right-nav-anim, .mobile-right-nav-anim, .part1, .part2, .part3, .part4, .part5 {
   opacity: 0;
 }
 
-.come-in {
-  animation: come-in 0.4s ease-in 0.35s forwards;
-  -webkit-animation: come-in 0.4s ease-in 0.35s forwards;
+.slide-up {
+  animation: slide-up 0.4s ease-in 0.35s forwards;
+  -webkit-animation: slide-up 0.4s ease-in 0.35s forwards;
 }
 
-@-webkit-keyframes come-in {
+@-webkit-keyframes slide-up {
   0% {
     -webkit-transform: translateY(25px); 
     -webkit-opacity: 0;
@@ -79,13 +158,44 @@ body, main {
   }
 }
 
-@keyframes come-in {
+@keyframes slide-up {
   0% {
-    transform: translateY(25px); 
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px); 
     opacity: 0;
   }
   100% { 
-    transform: translateY(0); 
+    -webkit-transform: translateY(0); 
+            transform: translateY(0); 
+    opacity: 1;
+  }
+}
+/* Elements Slide Down */
+.slide-down {
+  animation: slide-down 0.4s ease-in 0.35s forwards;
+  -webkit-animation: slide-down 0.4s ease-in 0.35s forwards;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(-25px); 
+    -webkit-opacity: 0;
+  }
+  100% { 
+    -webkit-transform: translateY(0); 
+    -webkit-opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px); 
+    opacity: 0;
+  }
+  100% { 
+    -webkit-transform: translateY(0); 
+            transform: translateY(0); 
     opacity: 1;
   }
 }
