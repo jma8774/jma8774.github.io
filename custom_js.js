@@ -129,19 +129,19 @@ jQuery(function() {
   });
     // Proceed Button
   $("#btn-proceed").on("click", function() {
-    $('html,body').animate({scrollTop: $(".about").offset().top}, 250);
+    $('html,body').animate({scrollTop: $(".about").offset().top - 150}, 250);
   });
     // Nav-About
   $(".nav-about").on("click", function() {
-    $('html,body').animate({scrollTop: $(".about").offset().top}, 250);
+    $('html,body').animate({scrollTop: $(".about").offset().top - 150}, 250);
   });
     // Nav-Project
   $(".nav-project").on("click", function() {
-    $('html,body').animate({scrollTop: $(".project").offset().top}, 250);
+    $('html,body').animate({scrollTop: $(".project").offset().top - 150}, 250);
   });
     // Nav-Contact
   $(".nav-contact").on("click", function() {
-    $('html,body').animate({scrollTop: $(".contact").offset().top}, 250);
+    $('html,body').animate({scrollTop: $(".contact").offset().top - 150}, 250);
   });
 
   // On Mouse Hover
