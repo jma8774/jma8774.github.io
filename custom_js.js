@@ -61,7 +61,7 @@ jQuery(function() {
     $('.mobile-nav').removeClass("d-none");
   }
     // Slide In
-  let tags = ['.part1', '.part2', '.part3', '.part4', '.part5']
+  let tags = ['.about', '.project', '.contact']
   tags.forEach(add_slide_in)
   navbar_slide();
   if($(window).width() < 800 || isMobile) 
@@ -112,7 +112,7 @@ jQuery(function() {
     }
     lastScrollTop = curScrollTop;
     // Slide In
-    let tags = ['.part1', '.part2', '.part3', '.part4', '.part5']
+    let tags = ['.about', '.project', '.contact']
     tags.forEach(add_slide_in)
     title_slide(true, 0);
   });
@@ -127,14 +127,37 @@ jQuery(function() {
   $(".btn-resume").on("click", function() {
     window.open('resume.pdf', '_blank');
   });
-
+    // Proceed Button
+  $("#btn-proceed").on("click", function() {
+    $('html,body').animate({scrollTop: $(".about").offset().top}, 250);
+  });
+    // Nav-About
+  $(".nav-about").on("click", function() {
+    $('html,body').animate({scrollTop: $(".about").offset().top}, 250);
+  });
+    // Nav-Project
+  $(".nav-project").on("click", function() {
+    $('html,body').animate({scrollTop: $(".project").offset().top}, 250);
+  });
+    // Nav-Contact
+  $(".nav-contact").on("click", function() {
+    $('html,body').animate({scrollTop: $(".contact").offset().top}, 250);
+  });
 
   // On Mouse Hover
-  $("#btn-work").mouseover(function() {
+    // Rotate Arrow
+  $("#btn-proceed").mouseover(function() {
     $(".arrow-rotate").css("transform", "rotate(90deg)");
   });
-  $("#btn-work").mouseleave(function() {
+  $("#btn-proceed").mouseleave(function() {
     $(".arrow-rotate").css("transform", "rotate(0deg)");
+  });
+    // Profile Picture
+  $("#profile-pic").mouseover(function() {
+    $("#profile-pic").css("transform", "scale(1.35)");
+  });
+  $("#profile-pic").mouseleave(function() {
+    $("#profile-pic").css("transform", "scale(1)");
   });
 });
 
