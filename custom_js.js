@@ -20,7 +20,7 @@ function add_slide_in(tag, idx) {
 function add_border_anim() {
   tags = ["#about", "#project", "#contact"];
   $(tags).each(function(i, el) {
-    if($(el + " > h1").hasClass("slide-up")) {
+    if($(el + " > h1").isInViewport()) {
       $(el + " > h1").addClass("border-slide");
     }
   });
@@ -54,7 +54,7 @@ function navbar_slide() {
 // Document.Ready()
 jQuery(function() {
   // Initial
-  alert("HELLO WORLD");
+  alert("HELLO WORLD1");
     // Detect Mobile
   var isMobile = false;
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
