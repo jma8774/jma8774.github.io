@@ -4,7 +4,7 @@ $.fn.isInViewport = function() {
   var elementBottom = elementTop + $(this).outerHeight();
 
   var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height() - 100;
+  var viewportBottom = viewportTop + $(window).height() - 75;
 
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
@@ -54,7 +54,6 @@ function navbar_slide() {
 // Document.Ready()
 jQuery(function() {
   // Initial
-  alert("HELLO WORLD1");
     // Detect Mobile
   var isMobile = false;
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
