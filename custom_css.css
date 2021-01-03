@@ -41,7 +41,6 @@ html {
   -webkit-animation: title-slide-up 0.5s ease-in forwards;
           animation: title-slide-up 0.5s ease-in forwards;
 }
-
 @-webkit-keyframes title-slide-up {
   0% {
     -webkit-transform: translateY(15px);
@@ -59,7 +58,6 @@ html {
     opacity: 1;
   }
 }
-
 @keyframes title-slide-up {
   0% {
     -webkit-transform: translateY(15px);
@@ -278,11 +276,43 @@ body, main {
   }
 }
 
+/* Border Sliding */
+.border-slide:after {
+  content: '';
+  display: block;
+  margin-top: 5px;
+  height: 3px;
+  width: 0px;
+  background: #b19cd9;
+  -webkit-animation: border-slide 0.5s ease-in 0.35s forwards;
+          animation: border-slide 0.5s ease-in 0.35s forwards;
+}
+@-webkit-keyframes border-slide {
+  0% {
+    width: 0px;
+  }
+  100% { 
+    width: 100%;
+  }
+}
+@keyframes border-slide {
+  0% {
+    width: 0px;
+  }
+  100% { 
+    width: 100%;
+  }
+}
+
 /* About Section */
 #profile-pic {
   border: 2px solid #b19cd9;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 #profile-pic:hover {

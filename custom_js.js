@@ -4,7 +4,7 @@ $.fn.isInViewport = function() {
   var elementBottom = elementTop + $(this).outerHeight();
 
   var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
+  var viewportBottom = viewportTop + $(window).height() - 100;
 
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
@@ -14,6 +14,14 @@ function add_slide_in(tag, idx) {
       setTimeout(function() { 
         $(el).addClass("slide-up");
       }, 150 * i);
+    }
+  });
+}
+function add_border_anim() {
+  tags = ["#about", "#project", "#contact"];
+  $(tags).each(function(i, el) {
+    if($(el + " > h1").hasClass("slide-up")) {
+      $(el + " > h1").addClass("border-slide");
     }
   });
 }
@@ -62,7 +70,8 @@ jQuery(function() {
   }
     // Slide In
   let tags = ['.about', '.project', '.contact']
-  tags.forEach(add_slide_in)
+  tags.forEach(add_slide_in);
+  add_border_anim();
   navbar_slide();
   if($(window).width() < 800 || isMobile) 
     title_slide(false, 0);
@@ -122,6 +131,7 @@ jQuery(function() {
     // Slide In
     let tags = ['.about', '.project', '.contact']
     tags.forEach(add_slide_in)
+    add_border_anim();
     title_slide(true, 0);
   });
 
@@ -162,7 +172,7 @@ jQuery(function() {
   });
     // Profile Picture
   $("#profile-pic").mouseover(function() {
-    $("#profile-pic").css("transform", "scale(1.35)");
+    $("#profile-pic").css("transform", "scale(1.3)");
   });
   $("#profile-pic").mouseleave(function() {
     $("#profile-pic").css("transform", "scale(1)");
