@@ -227,8 +227,11 @@ body, main {
 }
 @-webkit-keyframes slide-up {
   0% {
-    -webkit-transform: translateY(25px); 
+    -webkit-transform: translateY(40px); 
     -webkit-opacity: 0;
+  }
+  35% {
+    opacity: 0.6;
   }
   100% { 
     -webkit-transform: translateY(0); 
@@ -237,9 +240,12 @@ body, main {
 }
 @keyframes slide-up {
   0% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px); 
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px); 
     opacity: 0;
+  }
+  35% {
+    opacity: 0.6;
   }
   100% { 
     -webkit-transform: translateY(0); 

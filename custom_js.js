@@ -54,7 +54,6 @@ function navbar_slide() {
 // Document.Ready()
 jQuery(function() {
   // Initial
-  alert("TESTING");
     // Detect Mobile
   var isMobile = false;
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
