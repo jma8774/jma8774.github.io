@@ -293,7 +293,3 @@ body, main {
 .tech-icons:hover {
   color: #b19cd9;
 }
-
-#about, #project, #contact {
-  margin-bottom: 200px !important;
-}

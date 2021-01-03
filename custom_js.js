@@ -69,6 +69,10 @@ jQuery(function() {
   else {
     title_slide(false, 450);
   }
+    // Margin of Sections
+  $("#about").css("margin-bottom", Math.min(viewportHeight * 0.5, 400));
+  $("#project").css("margin-bottom", Math.min(viewportHeight * 0.5, 400));
+  $("#contact").css("margin-bottom", Math.min(viewportHeight * 0.5, 400));
 
   
   // On Resize
@@ -85,6 +89,10 @@ jQuery(function() {
     viewportHeight = $(window).height();
     $("#title").css("margin-top", (viewportHeight-$("#title").outerHeight()) * 0.25);
     $("#title").css("margin-bottom", (viewportHeight-$("#title").outerHeight()) * 0.65);
+    // Margin of Sections
+    $("#about").css("margin-bottom", Math.min(viewportHeight * 0.5, 400));
+    $("#project").css("margin-bottom", Math.min(viewportHeight * 0.5, 400));
+    $("#contact").css("margin-bottom", Math.min(viewportHeight * 0.5, 400));
   });
 
 
@@ -129,19 +137,19 @@ jQuery(function() {
   });
     // Proceed Button
   $("#btn-proceed").on("click", function() {
-    $('html,body').animate({scrollTop: $(".about").offset().top - 150}, 250);
+    $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
   });
     // Nav-About
   $(".nav-about").on("click", function() {
-    $('html,body').animate({scrollTop: $(".about").offset().top - 150}, 250);
+    $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
   });
     // Nav-Project
   $(".nav-project").on("click", function() {
-    $('html,body').animate({scrollTop: $(".project").offset().top - 150}, 250);
+    $('html,body').animate({scrollTop: $(".project").offset().top - (viewportHeight * .2)}, 250);
   });
     // Nav-Contact
   $(".nav-contact").on("click", function() {
-    $('html,body').animate({scrollTop: $(".contact").offset().top - 150}, 250);
+    $('html,body').animate({scrollTop: $(".contact").offset().top - (viewportHeight * .2)}, 250);
   });
 
   // On Mouse Hover
