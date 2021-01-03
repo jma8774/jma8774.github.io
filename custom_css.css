@@ -222,12 +222,12 @@ body, main {
 
 /* Elements Slide Up */
 .slide-up {
-  animation: slide-up 0.5s ease-in 0.25s forwards;
-  -webkit-animation: slide-up 0.5s ease-in 0.25s forwards;
+  animation: slide-up 0.5s ease-in 0.15s forwards;
+  -webkit-animation: slide-up 0.5s ease-in 0.15s forwards;
 }
 @-webkit-keyframes slide-up {
   0% {
-    -webkit-transform: translateY(40px); 
+    -webkit-transform: translateY(35px); 
     -webkit-opacity: 0;
   }
   35% {
@@ -240,8 +240,8 @@ body, main {
 }
 @keyframes slide-up {
   0% {
-    -webkit-transform: translateY(40px);
-            transform: translateY(40px); 
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px); 
     opacity: 0;
   }
   35% {
@@ -290,8 +290,8 @@ body, main {
   height: 3px;
   width: 0px;
   background: #b19cd9;
-  -webkit-animation: border-slide 0.5s ease-in 0.35s forwards;
-          animation: border-slide 0.5s ease-in 0.35s forwards;
+  -webkit-animation: border-slide 0.5s ease-in 0.25s forwards;
+          animation: border-slide 0.5s ease-in 0.25s forwards;
 }
 @-webkit-keyframes border-slide {
   0% {
