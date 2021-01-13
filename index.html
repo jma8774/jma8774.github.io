@@ -78,16 +78,16 @@
 <main role="main" class="container text-light bg-dark my-5">
   <div id="title">
     <div id="name" class="title-anim text-light"><strong>Jia Ming Ma. </strong></div>
-    <div id="name-body" class="mt-2 title-anim text-secondary-purple"><strong>Software Engineer and Web Developer based in New York, NY.</strong></div>
-    <button type="button" id="btn-proceed" class="btn btn-dark text-purple border-purple mt-3 title-anim px-lg-4 py-lg-3 shadow">
+    <div id="name-body" class="mt-2 title-anim text-title-purple"><strong>Software Engineer and Web Developer based in New York, NY.</strong></div>
+    <button type="button" id="btn-proceed" class="btn btn-dark text-purple border-purple mt-3 title-anim px-lg-4 py-lg-3 py-2 shadow">
       Proceed &nbsp <i class="fas fa-arrow-right fa-sm arrow-rotate"></i>
     </button>
   </div>
 
   <div id="about">
-    <h1 class="about section-name mb-5"> <span class="text-purple">01.</span> About Me </h1>
+    <h1 class="about section-name mb-4"> <span class="text-purple">01.</span> About Me </h1>
     <div class="row justify-content-around">
-      <div class="about section-body mb-5 col-xl-6 col-md-6"> 
+      <div class="about text-dark-light section-body mb-5 col-xl-6 col-md-6"> 
         Hello, I'm Jia Ming, a software engineer and web developer based in <span class="text-purple">New York, NY</span>. 
         </br>
         </br>
@@ -101,32 +101,47 @@
         </br>
         </br>
         <div class="about">
-          <i class="fab fa-python fa-3x px-2 pt-2 tech-icons" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
-          <i class="fab fa-java fa-3x px-2 pt-2 tech-icons" data-toggle="tooltip" data-placement="bottom" title="Java"></i>
-          <i class="fab fa-js-square fa-3x px-2 pt-2 tech-icons" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
-          <i class="fab fa-html5 fa-3x px-2 pt-2 tech-icons" data-toggle="tooltip" data-placement="bottom" title="HTML"></i>
-          <i class="fab fa-css3-alt fa-3x px-2 pt-2 tech-icons" data-toggle="tooltip" data-placement="bottom" title="CSS"></i>
-          <i class="fab fa-bootstrap fa-3x px-2 pt-2 tech-icons" data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
-          <i class="fab fa-github-square fa-3x px-2 pt-2 tech-icons" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+          <i class="fab fa-python fa-3x px-2 pt-2 hover-purple-icons" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
+          <i class="fab fa-java fa-3x px-2 pt-2 hover-purple-icons" data-toggle="tooltip" data-placement="bottom" title="Java"></i>
+          <i class="fab fa-js-square fa-3x px-2 pt-2 hover-purple-icons" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
+          <i class="fab fa-html5 fa-3x px-2 pt-2 hover-purple-icons" data-toggle="tooltip" data-placement="bottom" title="HTML"></i>
+          <i class="fab fa-css3-alt fa-3x px-2 pt-2 hover-purple-icons" data-toggle="tooltip" data-placement="bottom" title="CSS"></i>
+          <i class="fab fa-bootstrap fa-3x px-2 pt-2 hover-purple-icons" data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+          <i class="fab fa-github-square fa-3x px-2 pt-2 hover-purple-icons" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
         </div>
       </div>
       <div class="about section-body col-xl-6 col-md-6 text-center"> 
-        <img id="profile-pic" class="rounded w-50" src="img/profile.jpg">
+        <img id="profile-pic" class="rounded w-50 shadow" src="img/profile.jpg">
       </div>
     </div>
   </div>
 
   <div id="project">
-    <h1 class="project section-name mb-5 mt-5"> <span class="text-purple">02.</span> Project </h1>
-    <div class="project section-body"> 
+    <h1 class="project section-name mb-4 mt-5"> <span class="text-purple">02.</span> Things I've Created</h1>
+    <div class="project section-body text-dark-light"> 
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </div>
   </div>
 
-  <div id="contact">
-    <h1 class="contact section-name mb-5 mt-5"> <span class="text-purple">03.</span> Contact </h1>
-    <div class="contact section-body"> 
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  <div id="contact" class="text-center">
+    <h1 class="contact section-name mb-4 mt-5"> <span class="text-purple">03.</span> Get In Touch </h1>
+    <div class="contact section-body pb-4"> 
+      If you want to contact me about new opportunities, feel free to contact me through one of the services below and I'll try my best to get back to you. Otherwise, you can hit me up if you want to chat about things!
+    </div>
+    <button type="button" id="btn-contact" class="btn btn-dark contact text-purple border-purple mt-3 px-lg-4 py-lg-3 py-2 shadow">
+      Message Me
+    </button>
+    <div id="contact-list" class="contact mt-3 d-none bg-darker px-3 py-4 rounded shadow">
+      <div class="text-darker-light mb-4"> Click on any of the following to copy to clipboard. </div>
+      <span data-toggle="tooltip" data-placement="bottom" title="Email"> 
+        <i id="btn-email" class="far fa-envelope fa-3x px-2 pt-2 hover-purple-icons contact-icons" value="jma8774@bths.edu" data-toggle="popover" data-placement="top" data-content="Copied to clipboard!"></i>
+      </span>
+      <span data-toggle="tooltip" data-placement="bottom" title="Discord">
+        <i id="btn-discord" class="fab fa-discord fa-3x px-2 pt-2 hover-purple-icons contact-icons" value="mong#1905" data-toggle="popover" data-placement="top" data-content="Copied to clipboard!"></i>
+      </span>
+      <span data-toggle="tooltip" data-placement="bottom" title="LinkedIn"> 
+        <i id="btn-linkedin" class="fab fa-linkedin fa-3x px-2 pt-2 hover-purple-icons contact-icons" value="https://www.linkedin.com/in/jma8774/" data-toggle="popover" data-placement="top" data-content="Copied to clipboard!"></i>
+      </span>
     </div>
   </div>
 </main><!-- /.container -->

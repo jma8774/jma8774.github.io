@@ -17,14 +17,14 @@ function add_slide_in(tag, idx) {
     }
   });
 }
-function add_border_anim() {
-  tags = ["#about", "#project", "#contact"];
-  $(tags).each(function(i, el) {
-    if($(el + " > h1").isInViewport()) {
-      $(el + " > h1").addClass("border-slide");
-    }
-  });
-}
+// function add_border_anim() {
+//   tags = ["#about", "#project", "#contact"];
+//   $(tags).each(function(i, el) {
+//     if($(el + " > h1").isInViewport()) {
+//       $(el + " > h1").addClass("border-slide");
+//     }
+//   });
+// }
 function title_slide(isScroll, offset) {
   var delay = 1100;
   if(isScroll) delay = 500;
@@ -71,7 +71,7 @@ jQuery(function() {
     // Slide In
   let tags = ['.about', '.project', '.contact']
   tags.forEach(add_slide_in);
-  add_border_anim();
+  // add_border_anim();
   navbar_slide();
   if($(window).width() < 800 || isMobile) 
     title_slide(false, 0);
@@ -110,6 +110,9 @@ jQuery(function() {
   $(window).on("scroll", function (event) {
     // Popover
     $('#btn-heart').popover('hide');
+    $('.hover-purple-icons').each(function(i, el) {
+      $(el).popover('hide');
+    });
     // Toggle Navbar/Dropdown
     var curScrollTop = $(window).scrollTop();
     if(curScrollTop > lastScrollTop) {
@@ -131,7 +134,7 @@ jQuery(function() {
     // Slide In
     let tags = ['.about', '.project', '.contact']
     tags.forEach(add_slide_in)
-    add_border_anim();
+    // add_border_anim();
     title_slide(true, 0);
   });
 
@@ -161,6 +164,28 @@ jQuery(function() {
   $(".nav-contact").on("click", function() {
     $('html,body').animate({scrollTop: $(".contact").offset().top - (viewportHeight * .2)}, 250);
   });
+    // Contact Button
+  $("#btn-contact").on("click", function() {
+    $("#btn-contact").addClass("d-none");
+    $("#contact-list").addClass("slide-up");
+    $("#contact-list").addClass("d-inline-block");
+    $("#contact-list").removeClass("d-none");
+  });
+  // $("#btn-email").on("click", function() {
+  //   $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
+  // });
+  // $("#btn-discord").on("click", function() {
+  //   $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
+  // });
+  // $("#btn-linkedin").on("click", function() {
+  //   $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
+  // });
+  $('.contact-icons').each(function(i, el) {
+    $(el).on("click", function() {
+      console.log($(el).attr("value"));
+    });
+  });
+  
 
   // On Mouse Hover
     // Rotate Arrow
@@ -177,6 +202,13 @@ jQuery(function() {
   $("#profile-pic").mouseleave(function() {
     $("#profile-pic").css("transform", "scale(1)");
   });
+
+  // Popover Event
+  $('.contact-icons').on('show.bs.popover', function () {
+    $('.hover-purple-icons').each(function(i, el) {
+      $(el).popover('hide');
+    });
+  })
 });
 
 

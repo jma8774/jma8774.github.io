@@ -20,7 +20,7 @@ html {
 }
 
 .section-name {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 
@@ -90,7 +90,7 @@ html {
     font-size: 1.25rem;
   }
   .section-name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .section-body {
     font-size: 1rem;
@@ -105,7 +105,7 @@ html {
     font-size: 1.5rem;
   }
   .section-name {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
   }
   .section-body {
     font-size: 1rem;
@@ -120,7 +120,7 @@ html {
     font-size: 1.75rem;
   }
   .section-name {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
   .section-body {
     font-size: 1rem;
@@ -136,7 +136,7 @@ html {
     font-size: 2rem;
   }
   .section-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .section-body {
     font-size: 1rem;
@@ -152,11 +152,15 @@ body, main {
 }
 
 .text-title-purple {
-  color: #e4cfff;
+  color: #b5aacb;
 }
 
-.text-secondary-purple {
-  color: #b5aacb;
+.text-dark-light {
+  color: #ECECEC;
+}
+
+.text-darker-light {
+  color: #D3D3D3;
 }
 
 .border-purple {
@@ -282,16 +286,16 @@ body, main {
   }
 }
 
-/* Border Sliding */
+/* Border Sliding
 .border-slide:after {
   content: '';
   display: block;
-  margin-top: 5px;
+  margin-top: 0px;
   height: 3px;
   width: 0px;
   background: #b19cd9;
-  -webkit-animation: border-slide 0.5s ease-in 0.25s forwards;
-          animation: border-slide 0.5s ease-in 0.25s forwards;
+  -webkit-animation: border-slide 1s ease-in 0.25s forwards;
+          animation: border-slide 1s ease-in 0.25s forwards;
 }
 @-webkit-keyframes border-slide {
   0% {
@@ -310,6 +314,10 @@ body, main {
   }
 }
 
+.section-name {
+  display:inline-block;
+} */
+
 /* About Section */
 #profile-pic {
   border: 2px solid #b19cd9;
@@ -326,6 +334,10 @@ body, main {
   z-index: 1;
 }
 
-.tech-icons:hover {
+.hover-purple-icons:hover {
   color: #b19cd9;
+}
+
+.contact-icons:hover {
+  cursor: pointer;
 }
