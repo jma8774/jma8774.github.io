@@ -51,6 +51,15 @@ function navbar_slide() {
   }, 300);
 }
 
+// Copy to Clipboard
+function copyToClipboard(element, attr) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).attr(attr)).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
 // Document.Ready()
 jQuery(function() {
   // Initial
@@ -171,18 +180,9 @@ jQuery(function() {
     $("#contact-list").addClass("d-inline-block");
     $("#contact-list").removeClass("d-none");
   });
-  // $("#btn-email").on("click", function() {
-  //   $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
-  // });
-  // $("#btn-discord").on("click", function() {
-  //   $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
-  // });
-  // $("#btn-linkedin").on("click", function() {
-  //   $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
-  // });
   $('.contact-icons').each(function(i, el) {
     $(el).on("click", function() {
-      console.log($(el).attr("value"));
+      copyToClipboard(el, "value");
     });
   });
   
