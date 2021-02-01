@@ -29,7 +29,7 @@
         <button type="button" id="btn-heart" class="btn btn-dark bg-red btn-circle ml-3 navhover left-nav-anim" data-toggle="popover" title="Hey there!" data-placement="bottom" data-content="If you have any suggestions for the website, please let me know. Enjoy your stay! 😃">
           <i class="fas fa-heart"></i>
         </button>
-        <button type="button" id="btn-github" class="btn btn-dark bg-purple btn-circle ml-3 navhover left-nav-anim" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+        <button type="button" id="btn-github" class="btn btn-dark bg-purple btn-circle ml-3 navhover left-nav-anim" data-toggle="tooltip" data-placement="bottom" title="Visit GitHub">
           <i class="fab fa-github"></i>
         </button>
       </div>
@@ -91,7 +91,7 @@
         Hello, I'm Jia Ming, a software engineer and web developer based in <span class="text-purple">New York, NY</span>. 
         </br>
         </br>
-        I find enjoyment in building websites and software for various ideas and putting them up on the internet while learning and incorporating new technologies into it. My goal is to build <span class="text-purple">aesthetically pleasing and minimalistic interfaces</span>.
+        I find enjoyment in building websites and software for various ideas and putting them up on the internet while learning and incorporating new technologies into it. My goal is to build <span class="text-purple">aesthetically pleasing, minimalistic and easy to use interfaces</span>.
         </br>
         </br>
         Currently attending the <span class="text-purple">City College of New York</span>, and will be graduating shortly in Fall, 2021.
@@ -117,9 +117,125 @@
   </div>
 
   <div id="project">
-    <h1 class="project section-name mb-4 mt-5"> <span class="text-purple">02.</span> Things I've Created</h1>
-    <div class="project section-body text-dark-light"> 
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <h1 class="project section-name mt-5"> <span class="text-purple">02.</span> Things I've Created</h1>
+    <div class="section-body text-dark-light"> 
+      <div class="project text-darker-light mb-5">Below are some of the projects that I've worked on.</div>
+
+      <div class="project bg-darker px-3 py-3 mb-4 rounded text-center shadow"> 
+        <h3 class="mt-1 mb-1"> <strong> Valorant Agents Sheet </strong> <i id="btn-valorant-collapse" class="fas fa-chevron-circle-up float-right hover-pointer"></i> </h3> 
+        <div class="mb-4"> 
+        <span class="badge badge-primary">HTML</span> <span class="badge badge-success">CSS</span> <span class="badge badge-danger">Bootstrap</span> <span class="badge badge-warning">JavaScript/jQuery</span>
+        </div>
+        <div id="valorant-collapse">
+          <img class="rounded-top w-100 shadow border-top border-left border-right border-darkest" src="img/valorant_sheet.png">
+          <div class="bg-darkest w-100 py-3 px-lg-4 px-sm-3 px-3 rounded-bottom mx-auto">
+            A website for new players of the game Valorant to learn information about all the Valorant agents such as their bios and abilities. Created with a simple and intuitive UI, such that anyone can easily use it.
+            <div class="pt-1 pb-1 text-right">
+              <i id="btn-valorant-gh" class="fab fa-github px-2 fa-1x hover-pointer"></i>
+              <i id="btn-valorant-release" class="fas fa-external-link-alt px-2 fa-1x hover-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project bg-darker px-3 py-3 mb-4 rounded text-center shadow"> 
+        <h3 class="mt-1 mb-1"> <strong> Unity Platformer </strong> <i id="btn-platformer-collapse" class="fas fa-chevron-circle-up float-right hover-pointer"></i> </h3>
+        <div class="mb-4"> 
+          <span class="badge badge-primary">Unity</span> <span class="badge badge-success">C#</span> <span class="badge badge-danger">ShaderLab</span>
+        </div>
+        <div id="platformer-collapse">
+          <img class="rounded-top w-100 shadow border-top border-left border-right border-darkest" src="img/unity_platformer.png">
+          <div class="bg-darkest w-100 py-3 px-lg-4 px-sm-3 px-3 rounded-bottom mx-auto">
+            A game developed in Unity during 2020 using C# while I was learning it. Spent a lot of time learning about creating movement, hitboxes, abilities, etc. The game was eventually scrapped because I did not have the time to continue it.
+            You can play the game and see the controls by clicking the external link located in the bottom right.
+            <div class="pt-1 pb-1 text-right">
+              <i id="btn-platformer-gh" class="fab fa-github px-2 fa-1x hover-pointer"></i>
+              <i id="btn-platformer-release" class="fas fa-external-link-alt px-2 fa-1x hover-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project bg-darker px-3 py-3 mb-4 rounded text-center shadow"> 
+        <h3 class="mt-1 mb-1"> <strong> Fruit Assassin </strong> <i id="btn-fruit-collapse" class="fas fa-chevron-circle-up float-right hover-pointer"></i> </h3>
+        <div class="mb-4"> 
+        <span class="badge badge-primary">Android Studio </span> <span class="badge badge-warning">Java</span>
+        </div>
+        <div id="fruit-collapse">
+          <img class="rounded-top w-75 shadow border-top border-left border-right border-darkest" src="img/fruit_assassin.png">
+          <div class="bg-darkest w-75 py-3 px-lg-4 px-sm-3 px-3 rounded-bottom mx-auto">
+            This Android game is simple, you tap the screen and try to hit the apple without hurting any of the ducks. 
+            This project has a special place in my heart because it was one of the first projects that I've worked on and this was back in 2017 when I was in high school.
+            <div class="pt-1 pb-1 text-right">
+              <i id="btn-fruit-gh" class="fab fa-github px-2 fa-1x hover-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project text-darker-light mt-5 mb-3">Here are some other noteworthy projects.</div>
+
+      <div class="row justify-content-around">
+        <div class="project text-dark-light bg-darker rounded px-5 py-4 mb-3 col-xl-3"> 
+          <div class="pt-1">
+            <i id="btn-crypto-gh" class="fab fa-github pr-2 fa-1x hover-pointer"></i>
+            <i id="btn-crypto-release" class="fas fa-external-link-alt pr-2 fa-1x hover-pointer"></i>
+          </div>
+          <br>
+          <strong class="text-purple"> Crypto Slot Machine </strong>
+          <br>
+          <div class="font-size-small pt-2"> Work in progress group project for one of my classes. We need to create blockchain transaction of a slot machine game. </div>
+        </div>
+        <div class="project text-dark-light bg-darker rounded px-5 py-4 mb-3 col-xl-3"> 
+          <div class="pt-1">
+            <i id="btn-stock-gh" class="fab fa-github pr-2 fa-1x hover-pointer"></i>
+          </div>
+          <br>
+          <strong class="text-purple"> Stock Prediction </strong>
+          <br>
+          <div class="font-size-small pt-2"> Project for my Database Structures class where we keep track of user transactions of stock trades, kind of like Robinhood. <br><br> Hold GME! 🚀🚀 </div>
+        </div>
+        <div class="project text-dark-light bg-darker rounded px-5 py-4 mb-3 col-xl-3"> 
+          <div class="pt-1">
+            <i id="btn-foodies-gh" class="fab fa-github pr-2 fa-1x hover-pointer"></i>
+          </div>
+          <br>
+          <strong class="text-purple"> Foodies </strong>
+          <br>
+          <div class="font-size-small pt-2"> Project for my Software Engineering class where we design a food delivery system, kind of like Grubhub. I worked on implementing the queue system as well as using Google Map's API to create the route system.</div>
+        </div>
+      </div>
+
+      <div class="row justify-content-around">
+        <div class="project text-dark-light bg-darker rounded px-5 py-4 mb-3 col-xl-3"> 
+          <div class="pt-1">
+            <i id="btn-mortgage-gh" class="fab fa-github pr-2 fa-1x hover-pointer"></i>
+          </div>
+          <br>
+          <strong class="text-purple"> Mortgage Calculator </strong>
+          <br>
+          <div class="font-size-small pt-2"> A program used to calculate your mortgage developed in Java. </div>
+        </div>
+        <div class="project text-dark-light bg-darker rounded px-5 py-4 mb-3 col-xl-3"> 
+          <div class="pt-1">
+            <i id="btn-contact-gh" class="fab fa-github pr-2 fa-1x hover-pointer"></i>
+          </div>
+          <br>
+          <strong class="text-purple"> Contact Application </strong>
+          <br>
+          <div class="font-size-small pt-2"> Simple project I did for my Java class, where we had to design a dynamic contact list application. </div>
+        </div>
+        <div class="project text-dark-light bg-darker rounded px-5 py-4 mb-3 col-xl-3"> 
+          <div class="pt-1">
+            <i id="btn-mushroom-gh" class="fab fa-github pr-2 fa-1x hover-pointer"></i>
+          </div>
+          <br>
+          <strong class="text-purple"> Mushroom Platformer </strong>
+          <br>
+          <div class="font-size-small pt-2"> High school project my friend Billy and I did with Java to create a platformer game on Android. One of the first challenge I had which was to make an Android project after learning a bit of Java in high school. </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 

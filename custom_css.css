@@ -172,15 +172,31 @@ body, main {
 }
 
 .border-darker {
-  border-color: #2e3338;
+  border-color: #2e3338 !important;
+}
+
+.border-darkest {
+  border-color: #0e0f11 !important;
 }
 
 .bg-darker {
-  background-color: #2e3338;
+  background-color: #2e3338 !important;
+}
+
+.bg-darkest {
+  background-color: #0e0f11 !important;
 }
 
 .bg-red {
   background-color: #d9534f;
+}
+
+.hover-pointer {
+
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
 }
 
 .font-size-small {
@@ -330,7 +346,6 @@ body, main {
 }
 
 #profile-pic:hover {
-  cursor: pointer;
   z-index: 1;
 }
 
@@ -341,3 +356,6 @@ body, main {
 .contact-icons:hover {
   cursor: pointer;
 }
+
+
+/* Project Section */

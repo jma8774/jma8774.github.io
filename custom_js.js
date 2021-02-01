@@ -1,7 +1,7 @@
 // Sliding Helper Functions
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
+  var elementBottom = elementTop + $(this).outerHeight() * 0.7;
 
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
@@ -160,6 +160,93 @@ jQuery(function() {
     // Proceed Button
   $("#btn-proceed").on("click", function() {
     $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
+  });
+    // Valorant Collapse Button
+  $("#btn-valorant-collapse").on("click", function() {
+    var classes = $('#valorant-collapse')[0].classList;
+    if(classes[0] == undefined) {
+      $('#valorant-collapse').addClass("d-none");
+    } else if(classes[0] == "d-none") {
+      $('#valorant-collapse').addClass("d-inline");
+      $('#valorant-collapse').removeClass("d-none");
+    } else {
+      $('#valorant-collapse').addClass("d-none");
+      $('#valorant-collapse').removeClass("d-inline");
+    }
+  });
+    // Valorant GH Button
+  $("#btn-valorant-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Valorant-Agents-Website', '_blank');
+  });
+    // Valorant Release Button
+  $("#btn-valorant-release").on("click", function() {
+    window.open('https://jma8774.github.io/Valorant-Agents-Website/', '_blank');
+  });
+    // Platformer Collapse Button
+  $("#btn-platformer-collapse").on("click", function() {
+    var classes = $('#platformer-collapse')[0].classList;
+    if(classes[0] == undefined) {
+      $('#platformer-collapse').addClass("d-none");
+    } else if(classes[0] == "d-none") {
+      $('#platformer-collapse').addClass("d-inline");
+      $('#platformer-collapse').removeClass("d-none");
+    } else {
+      $('#platformer-collapse').addClass("d-none");
+      $('#platformer-collapse').removeClass("d-inline");
+    }
+  });
+    // Platformer GH Button
+  $("#btn-platformer-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Unity-Platformer', '_blank');
+  });
+    // Platformer Release Button
+  $("#btn-platformer-release").on("click", function() {
+    window.open('https://jeemong.itch.io/demo-platformer', '_blank');
+  });
+    // Fruit Assassin Collapse Button
+  $("#btn-fruit-collapse").on("click", function() {
+    var classes = $('#fruit-collapse')[0].classList;
+    if(classes[0] == undefined) {
+      $('#fruit-collapse').addClass("d-none");
+    } else if(classes[0] == "d-none") {
+      $('#fruit-collapse').addClass("d-inline");
+      $('#fruit-collapse').removeClass("d-none");
+    } else {
+      $('#fruit-collapse').addClass("d-none");
+      $('#fruit-collapse').removeClass("d-inline");
+    }
+  });
+    // Fruit Assassin GH Button
+  $("#btn-fruit-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Fruit-Assassin', '_blank');
+  });
+    // Crypto GH Button
+  $("#btn-crypto-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Crypto-Slot-Machine', '_blank');
+  });
+    // Crypto Release Button
+  $("#btn-crypto-gh").on("click", function() {
+    window.open('https://jma8774.github.io/Crypto-Slot-Machine/src/index.html', '_blank');
+  });
+    // Stock GH Button
+  $("#btn-stock-gh").on("click", function() {
+    window.open('https://github.com/Chuezhang2278/Stock_prediction', '_blank');
+  });
+    // Foodies GH Button
+  $("#btn-foodies-gh").on("click", function() {
+    window.open('https://github.com/Chuezhang2278/Foodies', '_blank');
+  });
+    // Mortgage GH Button
+  $("#btn-mortgage-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Mortgage-Calculator', '_blank');
+  });
+    // Contact GH Button
+  $("#btn-contact-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Contact-Application', '_blank');
+  });
+    // Mushroom GH Button
+  $("#btn-mushroom-gh").on("click", function() {
+    window.open('https://github.com/billyluy/platformerProject', '_blank');
   });
     // Nav-About
   $(".nav-about").on("click", function() {
