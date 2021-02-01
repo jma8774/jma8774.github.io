@@ -225,7 +225,7 @@ jQuery(function() {
     window.open('https://github.com/jma8774/Crypto-Slot-Machine', '_blank');
   });
     // Crypto Release Button
-  $("#btn-crypto-gh").on("click", function() {
+  $("#btn-crypto-release").on("click", function() {
     window.open('https://jma8774.github.io/Crypto-Slot-Machine/src/index.html', '_blank');
   });
     // Stock GH Button
