@@ -166,6 +166,8 @@ jQuery(function() {
     var classes = $('#valorant-collapse')[0].classList;
     if(classes[0] == undefined) {
       $('#valorant-collapse').addClass("d-none");
+      let tags = ['.about', '.project', '.contact']
+      tags.forEach(add_slide_in)
     } else if(classes[0] == "d-none") {
       $('#valorant-collapse').addClass("d-inline");
       $('#valorant-collapse').removeClass("d-none");
@@ -187,6 +189,8 @@ jQuery(function() {
     var classes = $('#platformer-collapse')[0].classList;
     if(classes[0] == undefined) {
       $('#platformer-collapse').addClass("d-none");
+      let tags = ['.about', '.project', '.contact']
+      tags.forEach(add_slide_in)
     } else if(classes[0] == "d-none") {
       $('#platformer-collapse').addClass("d-inline");
       $('#platformer-collapse').removeClass("d-none");
@@ -208,6 +212,8 @@ jQuery(function() {
     var classes = $('#fruit-collapse')[0].classList;
     if(classes[0] == undefined) {
       $('#fruit-collapse').addClass("d-none");
+      let tags = ['.about', '.project', '.contact']
+      tags.forEach(add_slide_in)
     } else if(classes[0] == "d-none") {
       $('#fruit-collapse').addClass("d-inline");
       $('#fruit-collapse').removeClass("d-none");
