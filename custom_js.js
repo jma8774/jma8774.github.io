@@ -161,6 +161,29 @@ jQuery(function() {
   $("#btn-proceed").on("click", function() {
     $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
   });
+  // Crypto Collapse Button
+  $("#btn-crypto-collapse").on("click", function() {
+    var classes = $('#crypto-collapse')[0].classList;
+    if(classes[0] == undefined) {
+      $('#crypto-collapse').addClass("d-none");
+      let tags = ['.about', '.project', '.contact']
+      tags.forEach(add_slide_in)
+    } else if(classes[0] == "d-none") {
+      $('#crypto-collapse').addClass("d-inline");
+      $('#crypto-collapse').removeClass("d-none");
+    } else {
+      $('#crypto-collapse').addClass("d-none");
+      $('#crypto-collapse').removeClass("d-inline");
+    }
+  });
+    // Crypto GH Button
+  $("#btn-crypto-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Slot-Machine-Crypto', '_blank');
+  });
+    // Crypto Release Button
+  $("#btn-crypto-release").on("click", function() {
+    window.open('https://crypto-slot-machine.herokuapp.com/', '_blank');
+  });
     // Valorant Collapse Button
   $("#btn-valorant-collapse").on("click", function() {
     var classes = $('#valorant-collapse')[0].classList;
