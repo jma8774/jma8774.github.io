@@ -249,13 +249,9 @@ jQuery(function() {
   $("#btn-fruit-gh").on("click", function() {
     window.open('https://github.com/jma8774/Fruit-Assassin', '_blank');
   });
-    // Crypto GH Button
-  $("#btn-crypto-gh").on("click", function() {
-    window.open('https://github.com/jma8774/Crypto-Slot-Machine', '_blank');
-  });
-    // Crypto Release Button
-  $("#btn-crypto-release").on("click", function() {
-    window.open('https://jma8774.github.io/Crypto-Slot-Machine/src/index.html', '_blank');
+    // Coinflip GH Button
+  $("#btn-coinflip-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Coin-Flip', '_blank');
   });
     // Stock GH Button
   $("#btn-stock-gh").on("click", function() {
