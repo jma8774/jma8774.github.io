@@ -1,7 +1,7 @@
 // Sliding Helper Functions
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight() * 0.7;
+  var elementBottom = elementTop + $(this).outerHeight();
 
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
@@ -13,7 +13,7 @@ function add_slide_in(tag, idx) {
     if ($(el).isInViewport()) {
       setTimeout(function() { 
         $(el).addClass("slide-up");
-      }, 150 * i);
+      }, 100 * i);
     }
   });
 }
@@ -183,6 +183,25 @@ jQuery(function() {
     // Crypto Release Button
   $("#btn-crypto-release").on("click", function() {
     window.open('https://crypto-slot-machine.herokuapp.com/', '_blank');
+  });
+  // MTA Collapse Button
+  $("#btn-mta-collapse").on("click", function() {
+    var classes = $('#mta-collapse')[0].classList;
+    if(classes[0] == undefined) {
+      $('#mta-collapse').addClass("d-none");
+      let tags = ['.about', '.project', '.contact']
+      tags.forEach(add_slide_in)
+    } else if(classes[0] == "d-none") {
+      $('#mta-collapse').addClass("d-inline");
+      $('#mta-collapse').removeClass("d-none");
+    } else {
+      $('#mta-collapse').addClass("d-none");
+      $('#mta-collapse').removeClass("d-inline");
+    }
+  });
+    // MTA GH Button
+  $("#btn-mta-gh").on("click", function() {
+    window.open('https://github.com/jma8774/MTA-Tracker', '_blank');
   });
     // Valorant Collapse Button
   $("#btn-valorant-collapse").on("click", function() {
