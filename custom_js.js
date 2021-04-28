@@ -203,6 +203,10 @@ jQuery(function() {
   $("#btn-mta-gh").on("click", function() {
     window.open('https://github.com/jma8774/MTA-Tracker', '_blank');
   });
+    // MTA Release Button
+  $("#btn-mta-release").on("click", function() {
+    window.open('https://simplemta.herokuapp.com/', '_blank');
+  });
     // Valorant Collapse Button
   $("#btn-valorant-collapse").on("click", function() {
     var classes = $('#valorant-collapse')[0].classList;
