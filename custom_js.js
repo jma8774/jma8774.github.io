@@ -205,7 +205,7 @@ jQuery(function() {
   });
     // MTA Release Button
   $("#btn-mta-release").on("click", function() {
-    window.open('https://simplemta.herokuapp.com/', '_blank');
+    window.open('https://simplemta.xyz', '_blank');
   });
     // Valorant Collapse Button
   $("#btn-valorant-collapse").on("click", function() {
