@@ -253,25 +253,31 @@ jQuery(function() {
   $("#btn-platformer-release").on("click", function() {
     window.open('https://jeemong.itch.io/demo-platformer', '_blank');
   });
-    // Fruit Assassin Collapse Button
-  $("#btn-fruit-collapse").on("click", function() {
-    var classes = $('#fruit-collapse')[0].classList;
+    // Smallify Collapse Button
+  $("#btn-smallify-collapse").on("click", function() {
+    var classes = $('#smallify-collapse')[0].classList;
     if(classes[0] == undefined) {
-      $('#fruit-collapse').addClass("d-none");
+      $('#smallify-collapse').addClass("d-none");
       let tags = ['.about', '.project', '.contact']
       tags.forEach(add_slide_in)
     } else if(classes[0] == "d-none") {
-      $('#fruit-collapse').addClass("d-inline");
-      $('#fruit-collapse').removeClass("d-none");
+      $('#smallify-collapse').addClass("d-inline");
+      $('#smallify-collapse').removeClass("d-none");
     } else {
-      $('#fruit-collapse').addClass("d-none");
-      $('#fruit-collapse').removeClass("d-inline");
+      $('#smallify-collapse').addClass("d-none");
+      $('#smallify-collapse').removeClass("d-inline");
     }
   });
-    // Fruit Assassin GH Button
-  $("#btn-fruit-gh").on("click", function() {
-    window.open('https://github.com/jma8774/Fruit-Assassin', '_blank');
+    // Smallify GH Button
+  $("#btn-smallify-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Shortener', '_blank');
   });
+
+  // Smallify Release Button
+  $("#btn-smallify-release").on("click", function() {
+    window.open('http://smallify.xyz/', '_blank');
+  });
+
     // Coinflip GH Button
   $("#btn-coinflip-gh").on("click", function() {
     window.open('https://github.com/jma8774/Coin-Flip', '_blank');
