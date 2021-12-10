@@ -161,6 +161,31 @@ jQuery(function() {
   $("#btn-proceed").on("click", function() {
     $('html,body').animate({scrollTop: $(".about").offset().top - (viewportHeight * .2)}, 250);
   });
+
+  // Snackies Collapse Button
+  $("#btn-snackies-collapse").on("click", function() {
+    var classes = $('#snackies-collapse')[0].classList;
+    if(classes[0] == undefined) {
+      $('#snackies-collapse').addClass("d-none");
+      let tags = ['.about', '.project', '.contact']
+      tags.forEach(add_slide_in)
+    } else if(classes[0] == "d-none") {
+      $('#snackies-collapse').addClass("d-inline");
+      $('#snackies-collapse').removeClass("d-none");
+    } else {
+      $('#snackies-collapse').addClass("d-none");
+      $('#snackies-collapse').removeClass("d-inline");
+    }
+  });
+    // Snackies GH Button
+  $("#btn-snackies-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Snackies', '_blank');
+  });
+    // Snackies Release Button
+  $("#btn-snackies-release").on("click", function() {
+    window.open('https://snackies.xyz/', '_blank');
+  });
+
   // Crypto Collapse Button
   $("#btn-crypto-collapse").on("click", function() {
     var classes = $('#crypto-collapse')[0].classList;
