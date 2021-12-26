@@ -186,6 +186,31 @@ jQuery(function() {
     window.open('https://snackies.xyz/', '_blank');
   });
 
+  // Pathfinding Collapse Button
+  $("#btn-pathfinding-collapse").on("click", function() {
+    var classes = $('#pathfinding-collapse')[0].classList;
+    if(classes[0] == undefined) {
+      $('#pathfinding-collapse').addClass("d-none");
+      let tags = ['.about', '.project', '.contact']
+      tags.forEach(add_slide_in)
+    } else if(classes[0] == "d-none") {
+      $('#pathfinding-collapse').addClass("d-inline");
+      $('#pathfinding-collapse').removeClass("d-none");
+    } else {
+      $('#pathfinding-collapse').addClass("d-none");
+      $('#pathfinding-collapse').removeClass("d-inline");
+    }
+  });
+    // Pathfinding GH Button
+  $("#btn-pathfinding-gh").on("click", function() {
+    window.open('https://github.com/jma8774/Pathfinding-Visualization', '_blank');
+  });
+    // Pathfinding Release Button
+  $("#btn-pathfinding-release").on("click", function() {
+    window.open('https://www.jiamingma.me/Pathfinding-Visualization/', '_blank');
+  });
+    
+
   // Crypto Collapse Button
   $("#btn-crypto-collapse").on("click", function() {
     var classes = $('#crypto-collapse')[0].classList;
