@@ -344,7 +344,7 @@ jQuery(function () {
 
   // Smallify Release Button
   $("#btn-smallify-release").on("click", function () {
-    window.open("http://smallify.xyz/", "_blank");
+    window.open("https://url-shortener-fun.herokuapp.com/", "_blank");
   });
 
   // Coinflip GH Button
